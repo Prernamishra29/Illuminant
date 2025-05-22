@@ -65,7 +65,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fa;
-  color: #1a365d;
+  color: #271a5d;
   line-height: 1.6;
 }
 
@@ -123,7 +123,7 @@ body {
 }
 
 .privacy-section h2 {
-  color: #1a365d;
+  color: #d4af37;
   margin-bottom: 10px;
 }
 
