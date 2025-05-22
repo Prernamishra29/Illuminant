@@ -21,6 +21,20 @@ const userSchema = new Schema(
         type: String,
         required: true
     }, 
+    contactNumber: {
+    type: String,
+    required: true,
+    validate: {
+        validator: function (v) {
+            return isValidPhoneNumber(v); // accepts any valid international number
+        },
+        message: props => `${props.value} is not a valid phone number!`
+        }
+    },
+    dob: {  
+    type: Date,
+    required: true,
+    },
     refreshToken: {
             type: String
         }
@@ -45,8 +59,6 @@ userSchema.methods.generateAccessToken = function(){
         {
             _id: this._id,
             email: this.email,
-            username: this.username,
-            fullName: this.fullName
         },
         process.env.ACCESS_TOKEN_SECRET,
         {
