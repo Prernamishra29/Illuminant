@@ -395,109 +395,177 @@
   line-height: 1.5;
 }
 
-/* General Section Styling */
+/* Modern Services Section Styles */
 .services-section {
-  padding: 60px 5%;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/ServiceBG.jpg');
+  padding: 100px 0;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(71, 68, 68, 0.8)), url('assets/ServiceBG.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-family: Arial, sans-serif;
+  position: relative;
 }
 
-/* Container */
 .services-container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
 }
 
-/* Header Section */
 .services-header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 40px;
-  align-items: flex-start;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.services-header-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .services-title {
-  font-size: 36pt;
-  color: #daa520;
-  font-family: 'Times New Roman', Times, serif;
-  margin-bottom: 20px;
+  font-size: 3.2rem;
+  color: #d4af37;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 1.5px;
 }
 
 .services-intro {
-  font-size: 16px;
+  font-size: 1.3rem;
   color: #ffffff;
-  line-height: 1.7;
+  line-height: 1.8;
+  font-style: italic;
+  opacity: 0.9;
 }
 
-.services-intro em {
-  color: rgb(194, 224, 244);
-  font-size: 14pt;
+.modern-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 35px;
+  padding: 20px 0;
 }
 
-/* Card Common Styles */
-.card {
-  border-radius: 15px;
-  padding: 20px;
+.modern-card {
+  background: rgba(26, 54, 93, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.modern-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2);
+}
+
+.modern-card:hover::before {
+  opacity: 1;
+}
+
+.card-icon {
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(135deg, #d4af37, #f1c40f);
+  border-radius: 16px;
   display: flex;
   align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  flex: 1;
+  justify-content: center;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25);
+  transition: transform 0.4s ease;
 }
 
-.card h3 {
-  color: #daa520;
-  font-size: 18pt;
+.modern-card:hover .card-icon {
+  transform: scale(1.05);
 }
 
-.card p em {
-  font-size: 12pt;
+.card-icon i {
+  font-size: 32px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* Specific Card Styles */
-.card-blue {
-  background-color: rgb(26, 63, 118);
+.modern-card .card-content h3 {
+  font-size: 1.6rem;
+  color: #d4af37;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 15px;
 }
 
-.card-blue p em {
-  color: rgb(194, 224, 244);
+.modern-card .card-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, transparent);
+  transition: width 0.4s ease;
 }
 
-.card-yellow {
-  background-color: #fff8dc;
+.modern-card:hover .card-content h3::after {
+  width: 100px;
 }
 
-.card-yellow p em {
-  color: rgb(35, 111, 161);
+.modern-card .card-content p {
+  color: #ffffff;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.9;
 }
 
-/* Card Layout Wrappers */
-.cards-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 2.4rem;
+  }
+  
+  .modern-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .modern-card {
+    padding: 30px;
+  }
+  
+  .modern-card .card-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  .card-icon {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 25px;
+  }
+  
+  .card-icon i {
+    font-size:28px;
+}
 }
 
-.card-left,
-.card-right {
-  display: flex;
-}
-
-.card-left {
-  justify-content: flex-start;
-}
-
-.card-right {
-  justify-content: flex-end;
-}
-
-.card-content {
-  max-width: 600px;
-}
 
 /* Contact Section */
 .contact-section {
