@@ -723,6 +723,7 @@ textarea:focus {
   max-width: 220px;
   height: auto;
   filter: drop-shadow(0 0 3px rgba(212, 175, 55, 0.5));
+  
 }
 
 /* Info Title */
@@ -751,12 +752,18 @@ textarea:focus {
   margin-bottom: 22px;
 }
 .icon {
+  margin-top: 15px;
   font-size: 24px;
   color: #d4af37;
   min-width: 38px;
   text-align: center;
-  line-height: 1;
+  line-height: 38px;
+  background-color: #1a365d;     /* Add this */
+  border-radius: 50%;          /* Make it circular */
+  width: 38px;                 /* Set width */
+  height: 38px;                /* Set height */
 }
+
 .info-item h3 {
   font-size: 18px;
   margin-bottom: 6px;
