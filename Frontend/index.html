@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ILLUMINANT VITAM SOLUTIONS </title>
+    <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
 </head>
 <body>
-    <!-- Navbar -->
+
+  <!-- Navbar -->
 <nav style="display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; background-color: #1a365d; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"><!-- Left: Logo + Heading -->
-<div style="display: flex; align-items: center; gap: 12px;"><img src="LOGO_Vitam.png" alt="Logo" style="width: 50px; height: 50px; object-fit: contain;">
+<div style="display: flex; align-items: center; gap: 0px;"><img src="illuminant logo.png" alt="Logo" style="width: 50px; height: 50px; object-fit: contain;">
 <div style="display: flex; align-items: center; gap: 20px;"><span style="font-size: 18px; font-weight: 600; letter-spacing: 1px; color: rgb(212, 175, 55);"> <span style="font-family: Poppins, sans-serif; font-size: 17.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #1a365d; float: none; display: inline !important;"> </span> <strong style="font-family: Poppins, sans-serif; font-weight: bold; -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; font-size: 17.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #1a365d;">Illuminant Vitam Solutions</strong> </span>
 <div style="display: flex; align-items: center; gap: 5px;"><!-- Telephone SVG Icon --> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M22 16.92v3a2 2 0 0 1-2.18 2
              19.79 19.79 0 0 1-8.63-3.07
@@ -28,7 +35,7 @@
 </nav>
 <!--HERO--->
 <section style="position: relative; padding: 100px 5%; min-height: 500px; display: flex; align-items: center; overflow: hidden;"><!-- Background Image with Overlay -->
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"><img src="MArkt.jpg" alt="Business Strategy Background" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"><img src="Leonardo_Lightning_XL_A_visual_only_image_with_the_theme_of_Il_0.jpg" alt="Business Strategy Background" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, rgba(10,35,66,0.85) 0%, rgba(10,35,66,0.7) 100%);"></div>
 </div>
 <!-- Content -->
@@ -40,8 +47,8 @@
 </div>
 </div>
 <!-- Scrolling Indicator -->
-<div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 2; text-align: center;">
-<div style="color: white; margin-bottom: 10px; font-size: 0.9rem;">Scroll to Explore</div>
+<div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 2; text-align: center; cursor: pointer; "onclick="smoothScrollToNextSection()">
+<div style="color: white; margin-bottom: 10px; font-size: 0.9rem; transition: all 0.3s;" id="ScrollText">Scroll to Explore</div>
 <div style="width: 24px; height: 40px; border: 2px solid #d4af37; border-radius: 12px; margin: 0 auto; position: relative;">
 <div style="width: 4px; height: 8px; background-color: #d4af37; border-radius: 2px; position: absolute; top: 6px; left: 50%; transform: translateX(-50%); animation: scrollIndicator 2s infinite;"></div>
 </div>
@@ -133,7 +140,7 @@
 </section>
 
 <!--Services-->
-<section style="padding: 60px 5%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('Why.jpg'); background-size: cover; background-position: center; background-attachment: fixed; font-family: Arial, sans-serif;">
+<section style="padding: 60px 5%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('Flux_Schnell_A_visual_only_image_with_the_theme_of_an_illumina_2.jpg'); background-size: cover; background-position: center; background-attachment: fixed; font-family: Arial, sans-serif;">
 <div style="max-width: 1200px; margin: auto;"><!-- Header Section with First Card -->
 <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 40px; align-items: flex-start;"><!-- Header Text -->
 <div style="flex: 1; min-width: 300px;">
@@ -251,7 +258,8 @@
 <!---FOOTER----><footer style="background: linear-gradient(135deg, #0a2342 0%, #1a4b8c 100%); color: white; padding: 60px 5% 30px;">
 <div style="max-width: 1200px; margin: 0 auto;"><!-- Footer Columns -->
 <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 50px;"><!-- Company Info Column -->
-<div style="flex: 1; min-width: 250px;"><img src="LOGO_Vitam.png" alt="Illuminant Vitam Solutions" style="max-width: 200px; margin-bottom: 20px;">
+<div style="flex: 1; min-width: 250px;"><img src="illuminant logo.png" alt="Illuminant Vitam Solutions" style="max-width: 200px; margin-bottom: 20px;">
+<div style="flex: 2; min-width: 250px;"><img src="illuminant words w White.png" alt="Illuminant Vitam Solutions" style="max-width: 200px; margin-bottom: 0px;"></div> 
 <p style="line-height: 1.6; margin-bottom: 20px;"><span style="color: rgb(255, 255, 255);">Strategic marketing consulting to illuminate your business potential and drive sustainable growth.</span></p>
 <div style="display: flex; gap: 15px;"><a href="#" style="color: white; background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path> <rect x="2" y="9" width="4" height="12"></rect> <circle cx="4" cy="4" r="2"></circle> </svg> </a> <a href="#" style="color: white; background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path> </svg> </a> <a href="#" style="color: white; background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect> <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path> <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line> </svg> </a></div>
 </div>
