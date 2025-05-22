@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ILLUMINANT VITAM SOLUTIONS </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <style>
   html {
     scroll-behavior: smooth;
@@ -13,323 +16,455 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-<nav style="display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; background-color: #1a365d; box-shadow: 0 1px 3px rgba(0,0,0,0.1);"><!-- Left: Logo + Heading -->
-<div style="display: flex; align-items: center; gap: 0px;"><img src="assets/illuminant logo.png" alt="Logo" style="width: 50px; height: 50px; object-fit: contain;">
-<div style="display: flex; align-items: center; gap: 20px;"><span style="font-size: 18px; font-weight: 600; letter-spacing: 1px; color: rgb(212, 175, 55);"> <span style="font-family: Poppins, sans-serif; font-size: 17.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #1a365d; float: none; display: inline !important;"> </span> <strong style="font-family: Poppins, sans-serif; font-weight: bold; -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; font-size: 17.6px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #1a365d;">Illuminant Vitam Solutions</strong> </span>
-<div style="display: flex; align-items: center; gap: 5px;"><!-- Telephone SVG Icon --> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M22 16.92v3a2 2 0 0 1-2.18 2
-             19.79 19.79 0 0 1-8.63-3.07
-             19.5 19.5 0 0 1-6-6
-             19.79 19.79 0 0 1-3.07-8.67
-             A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72
-             12.84 12.84 0 0 0 .7 2.81
-             2 2 0 0 1-.45 2.11L8.09 9.91
-             a16 16 0 0 0 6 6l1.27-1.27
-             a2 2 0 0 1 2.11-.45
-             12.84 12.84 0 0 0 2.81.7
-             A2 2 0 0 1 22 16.92z"></path> </svg> <!-- Phone Numbers --> <span style="color: #d4af37; font-size: 14px;"> 941 315-7157 | +1 888 380 0496 </span></div>
-</div>
-</div>
-<!-- Right: Navigation Links -->
-<div style="display: flex; align-items: center; gap: 24px;"><a href="#" style="text-decoration: none; color: #d4af37; font-weight: 500;">Home</a> <a href="#" style="text-decoration: none; color: #d4af37; font-weight: 500;">About</a> <a href="#" style="text-decoration: none; color: #d4af37; font-weight: 500;">Services</a> <a href="#" style="text-decoration: none; color: #d4af37; font-weight: 500;">Contact</a> <a href="#" style="text-decoration: none; background-color: #d4af37; color: #1a365d; padding: 8px 16px; border-radius: 9999px; font-weight: bold;">Connect</a></div>
+<!-- Navbar -->
+<link rel="stylesheet" href="styles.css">
+<nav class="navbar">
+  <!-- Left: Logo + Heading -->
+  <div class="navbar-left">
+    <img src="assets/navLogo.png" alt="Logo" class="navbar-logo">
+    <div class="navbar-contact">
+      <i class="fas fa-phone phone-icon"></i>
+      <span class="phone-numbers">941 315-7157 | +1 888 380 0496</span>
+    </div>
+  </div>
+
+  <!-- Right: Navigation Links -->
+  <div class="navbar-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <a href="#" class="connect-btn">Login/SignUp</a>
+  </div>
 </nav>
-<!--HERO--->
-<section style="position: relative; padding: 100px 5%; min-height: 500px; display: flex; align-items: center; overflow: hidden;"><!-- Background Image with Overlay -->
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"><img src="assets/HeroBG.jpg" alt="Business Strategy Background" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, rgba(10,35,66,0.85) 0%, rgba(10,35,66,0.7) 100%);"></div>
-</div>
-<!-- Content -->
-<div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; width: 100%;">
-<div style="max-width: 700px; text-align: center; margin: 0 auto;">
-<h1 style="font-size: 3.5rem; color: #d4af37; font-weight: bold; margin-bottom: 20px; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.4);">Illuminating Pathways to Purposeful Growth</h1>
-<p style="font-size: 1.3rem; color: #ffffff; line-height: 1.6; margin-bottom: 30px; opacity: 0.9;"><span style="color: rgb(255, 255, 255);">At Illuminant Vitam Solutions, we empower businesses with strategic clarity, operational efficiency, and market visibility—transforming ambition into measurable success.</span></p>
-<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;"><a href="#services" style="padding: 14px 32px; background-color: #d4af37; color: #0a2342; text-decoration: none; font-size: 1rem; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> Our Services </a> <a href="#contact" style="padding: 14px 32px; background-color: transparent; color: white; text-decoration: none; font-size: 1rem; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; border: 2px solid #d4af37; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"> Contact Us </a></div>
-</div>
-</div>
-<!-- Scrolling Indicator -->
-<div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 2; text-align: center; cursor: pointer; "onclick="smoothScrollToNextSection()">
-<div style="color: white; margin-bottom: 10px; font-size: 0.9rem; transition: all 0.3s;" id="ScrollText">Scroll to Explore</div>
-<div style="width: 24px; height: 40px; border: 2px solid #d4af37; border-radius: 12px; margin: 0 auto; position: relative;">
-<div style="width: 4px; height: 8px; background-color: #d4af37; border-radius: 2px; position: absolute; top: 6px; left: 50%; transform: translateX(-50%); animation: scrollIndicator 2s infinite;"></div>
-</div>
-</div>
-<!-- Scroll Animation --></section>
-<!-- Why Choose Us - Premium Design -->
-<section style="background: #fdf9f1; padding: 100px 5%; position: relative; overflow: hidden;"><!-- Decorative Elements -->
-<div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, rgba(212,175,55,0) 70%); border-radius: 50%;"></div>
-<div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;"><!-- Section Header -->
-<div style="text-align: center; margin-bottom: 60px;">
-<h2 style="font-size: 2.8rem; color: #0a2342; margin-bottom: 15px; position: relative; display: inline-block;"><span style="color: rgb(212, 175, 55);">Why Choose Illuminant Vitam? </span><span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background-color: #d4af37;"></span></h2>
-<p style="max-width: 700px; margin: 0 auto; color: #555; font-size: 1.2rem; line-height: 1.7;"><span style="color: rgb(0, 51, 102);">We deliver measurable transformation with a holistic, data-driven approach tailored to your unique goals.</span></p>
-</div>
-<!-- Content Grid -->
-<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;"><!-- Stats Cards - Now in 3x2 Grid -->
-<div style="flex: 1; min-width: 300px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;"><!-- Card 1 -->
-<div style="background-color: #003366; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(10,35,66,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid rgba(10,35,66,0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(10,35,66,0.1)'">
-<div style="font-size: 3rem; font-weight: bold; color: #d4af37; margin-bottom: 10px; line-height: 1;">0+</div>
-<p style="color: #0a2342; font-weight: 600; margin: 0; font-size: 1rem;"><span style="color: rgb(255, 255, 255);">Businesses Served</span></p>
-<div style="width: 40px; height: 3px; background-color: #d4af37; margin: 15px auto 0;"></div>
-</div>
-<!-- Card 2 -->
-<div style="background-color: #003366; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(10,35,66,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid rgba(10,35,66,0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(10,35,66,0.1)'">
-<div style="font-size: 3rem; font-weight: bold; color: #d4af37; margin-bottom: 10px; line-height: 1;">0%</div>
-<p style="color: #0a2342; font-weight: 600; margin: 0; font-size: 1rem;"><span style="color: rgb(255, 255, 255);">Client Retention</span></p>
-<div style="width: 40px; height: 3px; background-color: #d4af37; margin: 15px auto 0;"></div>
-</div>
-<!-- Card 3 -->
-<div style="background-color: #003366; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(10,35,66,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid rgba(10,35,66,0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(10,35,66,0.1)'">
-<div style="font-size: 3rem; font-weight: bold; color: #d4af37; margin-bottom: 10px; line-height: 1;">0+</div>
-<p style="color: #0a2342; font-weight: 600; margin: 0; font-size: 1rem;"><span style="color: rgb(255, 255, 255);">Industries Served</span></p>
-<div style="width: 40px; height: 3px; background-color: #d4af37; margin: 15px auto 0;"></div>
-</div>
-<!-- Card 4 -->
-<div style="background-color: #003366; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(10,35,66,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid rgba(10,35,66,0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(10,35,66,0.1)'">
-<div style="font-size: 3rem; font-weight: bold; color: #d4af37; margin-bottom: 10px; line-height: 1;">0x</div>
-<p style="color: #0a2342; font-weight: 600; margin: 0; font-size: 1rem;"><span style="color: rgb(255, 255, 255);">Average ROI</span></p>
-<div style="width: 40px; height: 3px; background-color: #d4af37; margin: 15px auto 0;"></div>
-</div>
-<!-- Card 5 -->
-<div style="background-color: #003366; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(10,35,66,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid rgba(10,35,66,0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(10,35,66,0.1)'">
-<div style="font-size: 3rem; font-weight: bold; color: #d4af37; margin-bottom: 10px; line-height: 1;">100%</div>
-<p style="color: #0a2342; font-weight: 600; margin: 0; font-size: 1rem;"><span style="color: rgb(255, 255, 255);">Dedicated Support</span></p>
-<div style="width: 40px; height: 3px; background-color: #d4af37; margin: 15px auto 0;"></div>
-</div>
-<!-- Card 6 -->
-<div style="background-color: #003366; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 15px rgba(10,35,66,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid rgba(10,35,66,0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(10,35,66,0.1)'">
-<div style="font-size: 3rem; font-weight: bold; color: #d4af37; margin-bottom: 10px; line-height: 1;">100%</div>
-<p style="color: #0a2342; font-weight: 600; margin: 0; font-size: 1rem;"><span style="color: rgb(255, 255, 255);">Custom Solutions</span></p>
-<div style="width: 40px; height: 3px; background-color: #d4af37; margin: 15px auto 0;"></div>
-</div>
-</div>
-<!-- Benefits List -->
-<div style="flex: 1; min-width: 300px; background: white; border-radius: 12px; padding: 40px; box-shadow: 0 10px 30px rgba(10,35,66,0.1); border: 1px solid rgba(10,35,66,0.05);">
-<h3 style="color: #0a2342; font-size: 1.5rem; margin-bottom: 25px; position: relative; padding-bottom: 15px;"><span style="color: rgb(212, 175, 55);">Our Competitive Edge</span> <span style="position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background-color: #d4af37;"></span></h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="padding: 15px 0; border-bottom: 1px solid rgba(10,35,66,0.05); display: flex; align-items: flex-start;">
-<div style="background-color: rgba(212,175,55,0.1); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#d4af37"> <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path> </svg></div>
-<div>
-<h4 style="color:  #d4af37; margin: 0 0 5px 0; font-size: 1.1rem;">Data-Driven Marketing Strategies</h4>
-<p style="color: #0a2342; margin: 0; font-size: 0.95rem; line-height: 1.5;">Actionable insights from comprehensive market analysis</p>
-</div>
-</li>
-<li style="padding: 15px 0; border-bottom: 1px solid rgba(10,35,66,0.05); display: flex; align-items: flex-start;">
-<div style="background-color: rgba(212,175,55,0.1); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#d4af37"> <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path> </svg></div>
-<div>
-<h4 style="color: #d4af37; margin: 0 0 5px 0; font-size: 1.1rem;">Tailored Creative Solutions</h4>
-<p style="color: #0a2342; margin: 0; font-size: 0.95rem; line-height: 1.5;">Custom branding that resonates with your audience</p>
-</div>
-</li>
-<li style="padding: 15px 0; border-bottom: 1px solid rgba(10,35,66,0.05); display: flex; align-items: flex-start;">
-<div style="background-color: rgba(212,175,55,0.1); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#d4af37"> <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path> </svg></div>
-<div>
-<h4 style="color: #d4af37; margin: 0 0 5px 0; font-size: 1.1rem;">Streamlined Operations</h4>
-<p style="color: #0a2342; margin: 0; font-size: 0.95rem; line-height: 1.5;">Efficiency audits that reduce costs by 15-40%</p>
-</div>
-</li>
-<li style="padding: 15px 0; display: flex; align-items: flex-start;">
-<div style="background-color: rgba(212,175,55,0.1); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#d4af37"> <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path> </svg></div>
-<div>
-<h4 style="color: #d4af37; margin: 0 0 5px 0; font-size: 1.1rem;">Holistic Growth Approach</h4>
-<p style="color: #0a2342; margin: 0; font-size: 0.95rem; line-height: 1.5;">Integrated solutions across all business functions</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
+
+<section class="hero-section" onclick="smoothScrollToNextSection()">
+  <!-- Background Image with Overlay -->
+  <div class="hero-bg">
+    <img src="assets/HeroBG.jpg" alt="Business Strategy Background" class="hero-bg-image" />
+    <div class="hero-bg-overlay"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="hero-content">
+    <div class="hero-text-container">
+      <h1>Illuminating Pathways to Purposeful Growth</h1>
+      <p>
+        <span>
+          At Illuminant Vitam Solutions, we empower businesses with strategic clarity,
+          operational efficiency, and market visibility—transforming ambition into measurable success.
+        </span>
+      </p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary">Our Services</a>
+        <a href="#contact" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrolling Indicator -->
+  <div class="scroll-indicator">
+    <div id="ScrollText">Scroll to Explore</div>
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
+  </div>
 </section>
 
-<!--Services-->
-<section style="padding: 60px 5%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('assets/ServiceBG.jpg'); background-size: cover; background-position: center; background-attachment: fixed; font-family: Arial, sans-serif;">
-<div style="max-width: 1200px; margin: auto;"><!-- Header Section with First Card -->
-<div style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 40px; align-items: flex-start;"><!-- Header Text -->
-<div style="flex: 1; min-width: 300px;">
-<h1 style="font-size: 36pt; color: #daa520; font-family: 'Times New Roman', Times, serif; margin-bottom: 20px;">Our Consulting Services</h1>
-<p style="font-size: 16px; color: #ffffff; line-height: 1.7;"><span style="color: rgb(194, 224, 244); font-size: 14pt;"><em>At Illuminant Vitam Solutions, we blend data-backed strategy with creative execution to help businesses grow smarter and faster.</em></span></p>
-</div>
-<!-- First Card -->
-<div style="flex: 1; min-width: 300px;">
-<div style="background-color: rgb(26, 63, 118); border-radius: 15px; padding: 20px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-<div style="flex: 1;">
-<h3 style="color: #daa520;"><span style="font-size: 18pt; color: rgb(241, 196, 15);">"Operational Optimization"</span></h3>
-<p style="color: rgb(173, 216, 230);"><span style="font-size: 12pt;"><em><span style="color: rgb(194, 224, 244);">Through process audits, data analysis, and performance metrics, we help you uncover inefficiencies, illuminate blind spots, and build systems that drive measurable improvements.</span></em></span></p>
-</div>
-</div>
-</div>
-</div>
-<!-- Cards Grid with Alternating Pattern -->
-<div style="display: flex; flex-direction: column; gap: 30px;"><!-- Left Card -->
-<div style="display: flex; justify-content: flex-start;">
-<div style="background-color: #fff8dc; border-radius: 15px; padding: 20px; display: flex; align-items: center; gap: 15px; max-width: 600px; flex-wrap: wrap;">
-<div style="flex: 1;">
-<h3 style="color: #daa520;"><span style="font-size: 18pt; color: rgb(241, 196, 15);">"Strategic Marketing Consulting"</span></h3>
-<p style="color: rgb(83, 119, 210);"><span style="font-size: 12pt;"><em><span style="color: rgb(35, 111, 161);">We design and implement marketing strategies that enhance brand visibility, customer engagement, and long-term loyalty—tailored to your specific business objectives.</span></em></span></p>
-</div>
-</div>
-</div>
-<!-- Right Card -->
-<div style="display: flex; justify-content: flex-end;">
-<div style="background-color: rgb(26, 63, 118); border-radius: 15px; padding: 20px; display: flex; align-items: center; gap: 15px; max-width: 600px; flex-wrap: wrap;">
-<div style="flex: 1;">
-<h3 style="color: #daa520;"><span style="font-size: 18pt; color: rgb(241, 196, 15);">"Startup &amp; Enterprise Growth Support"</span></h3>
-<p style="color: rgb(173, 216, 230);"><span style="font-size: 12pt;"><em><span style="color: rgb(194, 224, 244);">Whether you're launching a new business or scaling an established one, we provide step-by-step support, communication clarity, and execution discipline to move your business forward.</span></em></span></p>
-</div>
-</div>
-</div>
-<!-- Left Card -->
-<div style="display: flex; justify-content: flex-start;">
-<div style="background-color: #fff8dc; border-radius: 15px; padding: 20px; display: flex; align-items: center; gap: 15px; max-width: 600px; flex-wrap: wrap;">
-<div style="flex: 1;">
-<h3 style="color: #daa520;"><span style="font-size: 18pt; color: rgb(241, 196, 15);">"Creative Brand Solutions"</span></h3>
-<p style="color: rgb(83, 119, 210);"><span style="font-size: 12pt;"><em><span style="color: rgb(35, 111, 161);">We align visuals, messaging, and storytelling with strategic goals to create consistent and compelling brand experiences across all touchpoints.</span></em></span></p>
-</div>
-</div>
-</div>
-<!-- Right Card -->
-<div style="display: flex; justify-content: flex-end;">
-<div style="background-color: rgb(26, 63, 118); border-radius: 15px; padding: 20px; display: flex; align-items: center; gap: 15px; max-width: 600px; flex-wrap: wrap;">
-<div style="flex: 1;">
-<h3 style="color: #daa520;"><span style="color: rgb(241, 196, 15); font-size: 18pt;">"Long-Term Consulting Partnerships"</span></h3>
-<p style="color: rgb(173, 216, 230);"><span style="font-size: 12pt;"><em><span style="color: rgb(194, 224, 244);">We don't just deliver plans—we walk the path with you. Our long-term consulting support ensures you're continuously adapting to market shifts and client expectations.</span></em></span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!---CONTACT--->
-<section style="padding: 80px 5%; background: #fdf9f1;">
-<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center;"><!-- Left Column - Contact Form -->
-<div style="flex: 1; min-width: 300px; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
-<h2 style="font-size: 28px; color: #0a2342; margin-bottom: 30px; position: relative; padding-bottom: 15px;"><span style="color: rgb(212, 175, 55);">Get In Touch</span> <span style="position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background-color: #d4af37;"></span></h2>
-<form>
-<div style="display: flex; gap: 20px; margin-bottom: 20px;">
-<div style="flex: 1;"><label style="display: block; margin-bottom: 8px; font-weight: 600; color: #0a2342;">First Name *</label> <input type="text" required="" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f8fafc; transition: border 0.3s;" placeholder="John"></div>
-<div style="flex: 1;"><label style="display: block; margin-bottom: 8px; font-weight: 600; color: #0a2342;">Last Name *</label> <input type="text" required="" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f8fafc; transition: border 0.3s;" placeholder="Doe"></div>
-</div>
-<div style="margin-bottom: 20px;"><label style="display: block; margin-bottom: 8px; font-weight: 600; color: #0a2342;">Email *</label> <input type="email" required="" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f8fafc; transition: border 0.3s;" placeholder="your@email.com"></div>
-<div style="margin-bottom: 20px;"><label style="display: block; margin-bottom: 8px; font-weight: 600; color: #0a2342;">Company Name</label> <input type="text" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f8fafc; transition: border 0.3s;" placeholder="Your Company"></div>
-<div style="margin-bottom: 20px;"><label style="display: block; margin-bottom: 8px; font-weight: 600; color: #0a2342;">Available Time Slot *</label><select required="" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f8fafc; transition: border 0.3s;">
-<option value="">Choose a time</option>
-<option value="9-11am">9:00 AM - 11:00 AM</option>
-<option value="11-1pm">11:00 AM - 1:00 PM</option>
-<option value="2-4pm">2:00 PM - 4:00 PM</option>
-<option value="4-6pm">4:00 PM - 6:00 PM</option>
-</select></div>
-<div style="margin-bottom: 20px;"><label style="display: block; margin-bottom: 8px; font-weight: 600; color: #0a2342;">Would you like a video demo?</label>
-<div style="display: flex; gap: 20px;"><label style="display: flex; align-items: center; gap: 8px;"> <input type="radio" name="video-demo" value="Yes" style="accent-color: #d4af37;"> <span>Yes</span> </label> <label style="display: flex; align-items: center; gap: 8px;"> <input type="radio" name="video-demo" value="No" checked="checked" style="accent-color: #d4af37;"> <span>No</span> </label></div>
-</div>
-<div style="margin-bottom: 25px;"><label style="display: block; margin-bottom: 8px; font-weight: 600; color: #0a2342;">Message</label> <textarea rows="5" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #f8fafc; transition: border 0.3s;" placeholder="How can we help you?"></textarea></div>
-<button type="submit" style="background-color: #d4af37; color: #0a2342; border: none; padding: 14px 30px; font-size: 16px; font-weight: 600; border-radius: 6px; cursor: pointer; transition: all 0.3s; width: 100%;"> Submit </button></form></div>
-<!-- Right Column - Contact Info -->
-<div style="flex: 1; min-width: 300px;">
-<div style="text-align: center; margin-bottom: 30px;"><img src="LOGO_Vitam.png" alt="Illuminant Logo" style="max-width: 250px; height: auto;"></div>
-<h2 style="font-size: 36px; color: #d4af37; margin-bottom: 20px; text-align: center; font-weight: bold;">Contact Us</h2>
-<div style="background: rgba(10, 35, 66, 0.05); padding: 30px; border-radius: 10px; margin-top: 30px;">
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px;">
-<div style="color: #d4af37; font-size: 22px;"><i class="fas fa-map-marker-alt"></i></div>
-<div>
-<h3 style="color: #0a2342; margin: 0 0 5px 0; font-size: 18px;">Our Office</h3>
-<p style="color: #555; margin: 0;">ILLUMINANT VITAM SOLUTIONS, LLC 2055 Wood Street Ste 120 Sarasota, <br>Florida 34237</p>
-</div>
-</div>
-<div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px;">
-<div style="color: #d4af37; font-size: 22px;"><i class="fas fa-phone-alt"></i></div>
-<div>
-<h3 style="color: #0a2342; margin: 0 0 5px 0; font-size: 18px;">Call Us</h3>
-<p style="color: #555; margin: 0;">941 315-7157<br>Mon-Fri, 9am-6pm EST</p>
-</div>
-</div>
-<div style="display: flex; align-items: flex-start; gap: 15px;">
-<div style="color: #d4af37; font-size: 22px;"><i class="fas fa-envelope"></i></div>
-<div>
-<h3 style="color: #0a2342; margin: 0 0 5px 0; font-size: 18px;">Email Us</h3>
-<p style="color: #555; margin: 0;">info@illuminantvitam.com<br>illuminantvitam.com</p>
-</div>
-</div>
-</div>
-<div style="margin-top: 30px; text-align: center;">
-<h3 style="color: #0a2342; margin-bottom: 20px; font-size: 20px; font-weight: 600;"><span style="color: rgb(212, 175, 55);">Follow Us</span></h3>
-<div style="display: flex; justify-content: center; gap: 15px;"><!-- Website --> <a href="https://illuminantvitam.com" target="_blank" style="color: white; background-color: #d4af37; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" rel="noopener"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="12" cy="12" r="10"></circle> <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path> </svg> </a> <!-- LinkedIn --> <a href="http://www.linkedin.com/company/illuminant-vitam-solutions-llc" target="_blank" style="color: white; background-color: #0077b5; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" rel="noopener"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path> <rect x="2" y="9" width="4" height="12"></rect> <circle cx="4" cy="4" r="2"></circle> </svg> </a> <!-- Email --> <a href="mailto:info@illuminantvitam.com" style="color: white; background-color: #34a853; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" rel="noopener"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path> <polyline points="22,6 12,13 2,6"></polyline> </svg> </a> <!-- Instagram --> <a href="#" target="_blank" style="color: white; background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" rel="noopener"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect> <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path> <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line> </svg> </a> <!-- Facebook --> <a href="https://www.facebook.com/profile.php?id=61576273297808" target="_blank" style="color: white; background-color: #1877f2; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" rel="noopener"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path> </svg> </a></div>
-</div>
-</div>
-</div>
-</section>
-<!---FOOTER----><footer style="background: linear-gradient(135deg, #0a2342 0%, #1a4b8c 100%); color: white; padding: 60px 5% 30px;">
-<div style="max-width: 1200px; margin: 0 auto;"><!-- Footer Columns -->
-<div style="display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 50px;"><!-- Company Info Column -->
-<div style="flex: 1; min-width: 250px;"><img src="assets/illuminant logo.png" alt="Illuminant Vitam Solutions" style="max-width: 200px; margin-bottom: 20px;">
-<div style="flex: 2; min-width: 250px;"><img src="assets/illuminant words w White.png" alt="Illuminant Vitam Solutions" style="max-width: 200px; margin-bottom: 0px;"></div> 
-<p style="line-height: 1.6; margin-bottom: 20px;"><span style="color: rgb(255, 255, 255);">Strategic marketing consulting to illuminate your business potential and drive sustainable growth.</span></p>
-<div style="display: flex; gap: 15px;"><!-- LinkedIn -->
-<a href="http://www.linkedin.com/company/illuminant-vitam-solutions-llc" style="color: white; background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-    <rect x="2" y="9" width="4" height="12"></rect>
-    <circle cx="4" cy="4" r="2"></circle>
-  </svg>
-</a>
+<section class="why-choose-section">
+  <div class="why-choose-decor"></div>
+  <div class="container-1200">
+    <div class="section-header">
+      <h2>
+        <span class="highlight">Why Choose Illuminant Vitam? </span>
+        <span class="underline"></span>
+      </h2>
+      <p><span>We deliver measurable transformation with a holistic, data-driven approach tailored to your unique goals.</span></p>
+    </div>
 
-<!-- Email -->
-<a href="mailto:info@illuminantvitam.com" style="color: white; background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-    <polyline points="22,6 12,13 2,6"></polyline>
-  </svg>
-</a>
+    <div class="content-grid">
+      <div class="stats-cards">
+        <div class="card">
+          <div class="number">0+</div>
+          <p>Businesses Served</p>
+          <div class="underline"></div>
+        </div>
 
-<!-- Facebook -->
-<a href="https://www.facebook.com/profile.php?id=61576273297808" style="color: white; background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.28l.72-4H14V7a1 1 0 0 1 1-1h3z"></path>
-  </svg>
-</a>
-</div>
-</div>
-<!-- Quick Links Column -->
-<div style="flex: 1; min-width: 150px;">
-<h3 style="color: #d4af37; font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px;">Quick Links <span style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #d4af37;"></span></h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Home</a></li>
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">About Us</a></li>
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Services</a></li>
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Case Studies</a></li>
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Contact</a></li>
-</ul>
-</div>
-<!-- Services Column -->
-<div style="flex: 1; min-width: 150px;">
-<h3 style="color: #d4af37; font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px;">Services <span style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #d4af37;"></span></h3>
-<ul style="list-style: none; padding: 0; margin: 0;">
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Strategic Marketing Consulting</a></li>
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Startup &amp; Enterprise Growth</a></li>
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Creative Brand Solutions</a></li>
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Market Research</a></li>
-<li style="margin-bottom: 12px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Long-term Consulting Partnership</a></li>
-</ul>
-</div>
-<!-- Contact Info Column -->
-<div style="flex: 1; min-width: 250px;">
-<h3 style="color: #d4af37; font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px;">Contact Us <span style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #d4af37;"></span></h3>
-<div style="margin-bottom: 15px; display: flex; gap: 12px;">
-<div style="color: #d4af37;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path> <circle cx="12" cy="10" r="3"></circle> </svg></div>
-<p style="margin: 0;"><span style="color: rgb(255, 255, 255);">ILLUMINANT VITAM SOLUTIONS, LLC</span><br><span style="color: rgb(255, 255, 255);">2055 Wood Street Ste 120</span><br><span style="color: rgb(255, 255, 255);">Sarasota, Florida 34237</span></p>
-</div>
-<div style="margin-bottom: 15px; display: flex; gap: 12px;">
-<div style="color: #d4af37;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path> </svg></div>
-<p style="margin: 0;"><span style="color: rgb(255, 255, 255);">941 315-7157</span><br><span style="color: rgb(255, 255, 255);">Mon-Fri, 9am-6pm EST</span></p>
-</div>
-<div style="display: flex; gap: 12px;">
-<div style="color: #d4af37;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path> <polyline points="22,6 12,13 2,6"></polyline> </svg></div>
-<p style="margin: 0;"><span style="color: rgb(255, 255, 255);">info@illuminantvitam.com</span><br><span style="color: rgb(255, 255, 255);">illuminantvitam.com</span></p>
-</div>
-</div>
-</div>
-<!-- Copyright - Now properly centered -->
-<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center;">
-<p style="margin: 0px; color: rgba(255, 255, 255, 0.7); font-size: 14px; text-align: center;"> <span style="color: rgb(255, 255, 255);">    © 2023 Illuminant Vitam Solutions, LLC. All rights reserved.</span></p>
-</div>
-</div>
+        <div class="card">
+          <div class="number">0%</div>
+          <p>Client Retention</p>
+          <div class="underline"></div>
+        </div>
+
+        <div class="card">
+          <div class="number">0+</div>
+          <p>Industries Served</p>
+          <div class="underline"></div>
+        </div>
+
+        <div class="card">
+          <div class="number">0x</div>
+          <p>Average ROI</p>
+          <div class="underline"></div>
+        </div>
+
+        <div class="card">
+          <div class="number">100%</div>
+          <p>Dedicated Support</p>
+          <div class="underline"></div>
+        </div>
+
+        <div class="card">
+          <div class="number">100%</div>
+          <p>Custom Solutions</p>
+          <div class="underline"></div>
+        </div>
+      </div>
+
+      <div class="benefits-list">
+        <h3>
+          <span class="highlight">Our Competitive Edge</span>
+          <span class="underline"></span>
+        </h3>
+        <ul>
+          <li>
+            <div class="icon-wrapper">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Data-Driven Marketing Strategies</h4>
+              <p>Actionable insights from comprehensive market analysis</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-wrapper">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Tailored Creative Solutions</h4>
+              <p>Custom branding that resonates with your audience</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-wrapper">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Streamlined Operations</h4>
+              <p>Efficiency audits that reduce costs by 15-40%</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-wrapper">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Holistic Growth Approach</h4>
+              <p>Integrated solutions across all business functions</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section">
+  <div class="services-container">
+
+    <!-- Header Section with First Card -->
+    <div class="services-header">
+      <!-- Header Text -->
+      <div style="flex: 1; min-width: 300px;">
+        <h1 class="services-title">Our Consulting Services</h1>
+        <p class="services-intro">
+          <em>At Illuminant Vitam Solutions, we blend data-backed strategy with creative execution to help businesses grow smarter and faster.</em>
+        </p>
+      </div>
+    </div>
+
+    <!-- Cards Grid with Alternating Pattern -->
+    <div class="cards-grid">
+
+      <!-- Right Card -->
+      <div class="card-right">
+        <div class="card card-blue card-content">
+          <div class="card-content">
+            <h3><span style="color: rgb(241, 196, 15);">""Operational Optimization""</span></h3>
+            <p><em>Through process audits, data analysis, and performance metrics, we help you uncover inefficiencies, illuminate blind spots, and build systems that drive measurable improvements.</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Card -->
+      <div class="card-left">
+        <div class="card card-yellow card-content">
+          <div class="card-content">
+            <h3><span style="color: rgb(241, 196, 15);">"Strategic Marketing Consulting"</span></h3>
+            <p><em>We design and implement marketing strategies that enhance brand visibility, customer engagement, and long-term loyalty—tailored to your specific business objectives.</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Card -->
+      <div class="card-right">
+        <div class="card card-blue card-content">
+          <div class="card-content">
+            <h3><span style="color: rgb(241, 196, 15);">"Startup &amp; Enterprise Growth Support"</span></h3>
+            <p><em>Whether you're launching a new business or scaling an established one, we provide step-by-step support, communication clarity, and execution discipline to move your business forward.</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Card -->
+      <div class="card-left">
+        <div class="card card-yellow card-content">
+          <div class="card-content">
+            <h3><span style="color: rgb(241, 196, 15);">"Creative Brand Solutions"</span></h3>
+            <p><em>We align visuals, messaging, and storytelling with strategic goals to create consistent and compelling brand experiences across all touchpoints.</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Card -->
+      <div class="card-right">
+        <div class="card card-blue card-content">
+          <div class="card-content">
+            <h3><span style="color: rgb(241, 196, 15);">"Long-Term Consulting Partnerships"</span></h3>
+            <p><em>We don't just deliver plans—we walk the path with you. Our long-term consulting support ensures you're continuously adapting to market shifts and client expectations.</em></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="contact-container">
+    <!-- Left Column - Contact Form -->
+    <div class="contact-form-box">
+      <h2 class="form-title">
+        <span class="highlight">Get In Touch</span>
+        <span class="underline"></span>
+      </h2>
+      <form>
+        <div class="input-row">
+          <div class="input-group">
+            <label for="first-name">First Name *</label>
+            <input id="first-name" type="text" required placeholder="John" />
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last Name *</label>
+            <input id="last-name" type="text" required placeholder="Doe" />
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="email">Email *</label>
+          <input id="email" type="email" required placeholder="your@email.com" />
+        </div>
+        <div class="input-group">
+          <label for="company">Company Name</label>
+          <input id="company" type="text" placeholder="Your Company" />
+        </div>
+        <div class="input-group">
+          <label for="timeslot">Available Time Slot *</label>
+          <select id="timeslot" required>
+            <option value="" disabled selected>Choose a time</option>
+            <option value="9-11am">9:00 AM - 11:00 AM</option>
+            <option value="11-1pm">11:00 AM - 1:00 PM</option>
+            <option value="2-4pm">2:00 PM - 4:00 PM</option>
+            <option value="4-6pm">4:00 PM - 6:00 PM</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Would you like a video demo?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="video-demo" value="Yes" /> Yes</label>
+            <label><input type="radio" name="video-demo" value="No" checked /> No</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="How can we help you?"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <!-- Right Column - Contact Info -->
+    <div class="contact-info-box">
+      <div class="logo-box">
+        <img src="LOGO_Vitam.png" alt="Illuminant Logo" />
+      </div>
+      <h2 class="info-title">Contact Us</h2>
+      <div class="info-card">
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h3>Our Office</h3>
+            <p>
+              ILLUMINANT VITAM SOLUTIONS, LLC <br />
+              2055 Wood Street Ste 120 <br />
+              Sarasota, Florida 34237
+            </p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <h3>Call Us</h3>
+            <p>941 315-7157<br />Mon-Fri, 9am-6pm EST</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h3>Email Us</h3>
+            <p>info@illuminantvitam.com<br />illuminantvitam.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-section">
+        <h3><span class="highlight">Follow Us</span></h3>
+        <div class="social-icons">
+          <a href="https://illuminantvitam.com" target="_blank" class="icon website" rel="noopener" aria-label="Website">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="http://www.linkedin.com/company/illuminant-vitam-solutions-llc" target="_blank" class="icon linkedin" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:info@illuminantvitam.com" class="icon email" rel="noopener" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" target="_blank" class="icon instagram" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61576273297808" target="_blank" class="icon facebook" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!---FOOTER---->
+<footer class="footer-container">
+  <div class="footer-inner">
+    <!-- Footer Columns -->
+    <div class="footer-columns">
+      <!-- Company Info Column -->
+      <div class="footer-company-info">
+        <img src="assets/footerLogo.png" alt="Illuminant Vitam Solutions" class="footer-logo-img">
+        <p class="footer-company-description">
+          Strategic marketing consulting to illuminate your business potential and drive sustainable growth.
+        </p>
+        <div class="footer-social-links">
+          <!-- LinkedIn -->
+          <a href="http://www.linkedin.com/company/illuminant-vitam-solutions-llc" class="footer-social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <!-- Email -->
+          <a href="mailto:info@illuminantvitam.com" class="footer-social-link" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/profile.php?id=61576273297808" class="footer-social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.28l.72-4H14V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Quick Links Column -->
+      <div class="footer-links-column">
+        <h3 class="footer-column-title">Quick Links <span class="footer-column-underline"></span></h3>
+        <ul class="footer-links-list">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">About Us</a></li>
+          <li><a href="#" class="footer-link">Services</a></li>
+          <li><a href="#" class="footer-link">Case Studies</a></li>
+          <li><a href="#" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Services Column -->
+      <div class="footer-links-column">
+        <h3 class="footer-column-title">Services <span class="footer-column-underline"></span></h3>
+        <ul class="footer-links-list">
+          <li><a href="#" class="footer-link">Strategic Marketing Consulting</a></li>
+          <li><a href="#" class="footer-link">Startup &amp; Enterprise Growth</a></li>
+          <li><a href="#" class="footer-link">Creative Brand Solutions</a></li>
+          <li><a href="#" class="footer-link">Market Research</a></li>
+          <li><a href="#" class="footer-link">Long-term Consulting Partnership</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info Column -->
+      <div class="footer-contact-column">
+        <h3 class="footer-column-title">Contact Us <span class="footer-column-underline"></span></h3>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <p class="footer-contact-text">
+            ILLUMINANT VITAM SOLUTIONS, LLC<br>
+            2055 Wood Street Ste 120<br>
+            Sarasota, Florida 34237
+          </p>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <p class="footer-contact-text">
+            941 315-7157<br>
+            Mon-Fri, 9am-6pm EST
+          </p>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <p class="footer-contact-text">
+            info@illuminantvitam.com<br>
+            illuminantvitam.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright">
+      <p>© 2023 Illuminant Vitam Solutions, LLC. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
+
 </body>
 </html>
