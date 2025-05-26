@@ -570,21 +570,29 @@
   text-align: center;
   margin-top: 60px;
 }
-
 .opt-service-btn {
   display: inline-block;
-  background: linear-gradient(135deg, #d4af37, #f1c40f);
-  color: #1a1a1a;
+  background: linear-gradient(135deg, #003da7, #002e7d); /* Rich professional blue */
+  color: #ffd700; /* Classic gold text */
   font-weight: 700;
   padding: 14px 36px;
   border-radius: 50px;
   font-size: 1.2rem;
   text-decoration: none;
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 61, 167, 0.4);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  border: none;
 }
+
+/* Optional hover effect */
+.opt-service-btn:hover {
+  background: linear-gradient(135deg, #012667, #001f5b);
+  box-shadow: 0 10px 24px rgba(0, 61, 167, 0.5);
+  transform: translateY(-2px);
+}
+
 
 .opt-service-btn::before {
   content: "";
