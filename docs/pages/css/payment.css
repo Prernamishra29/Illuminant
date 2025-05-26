@@ -84,7 +84,7 @@ body {
 /* Right Payment Section */
 .payment-section {
   flex: 1.5;
-  padding: 2rem;
+  padding: 1rem;
   background: #f9f9fb;
 }
 
@@ -115,6 +115,22 @@ body {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.bank-banner {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.accepted-text {
+  text-align: center;
+  color: #1a365d;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
 }
 
 .payment-form {
