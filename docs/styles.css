@@ -1210,6 +1210,25 @@ textarea:focus {
   .navbar-logo {
     height: 50px;
   }
+
+  /* Show phone number inside active mobile menu */
+  .navbar-links.active .navbar-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .navbar-links.active .navbar-contact .phone-numbers {
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+  
+  .navbar-links.active .navbar-contact .phone-icon {
+    font-size: 1rem;
+  }
 }
 
 /* Add overlay when menu is open */

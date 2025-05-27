@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Return and Refund Policy | Illuminant Vitam Solutions</title>
+  <link rel="stylesheet" href="../styles.css"/>
   <link rel="stylesheet" href="css/return.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -13,18 +14,24 @@
   <nav class="navbar">
     <div class="navbar-left">
       <img src="../assets/navLogo.png" alt="Logo" class="navbar-logo">
+    </div>
+    <div class="navbar-links">
       <div class="navbar-contact">
         <i class="fas fa-phone phone-icon"></i>
         <span class="phone-numbers">941 315-7157 | +1 888 380 0496</span>
       </div>
-    </div>
-    <div class="navbar-links">
       <a href="../index.html">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
       <a href="login.html" class="connect-btn">Login/SignUp</a>
     </div>
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger-menu" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 
   <!-- Return Policy -->
@@ -192,6 +199,33 @@
 
   <!-- Footer (same as before) -->
   <!-- [Paste your existing footer HTML here for consistency] -->
+
+<script>
+  // Hamburger menu functionality
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navLinks = document.querySelector('.navbar-links');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    }
+  });
+
+  // Close menu when clicking on a link
+  document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
 
 </body>
 </html>
