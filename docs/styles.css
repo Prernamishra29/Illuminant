@@ -5,6 +5,7 @@
   padding: 16px 32px;
   background-color: #1a365d;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .navbar-left {
@@ -617,7 +618,7 @@
 
 /* Contact Section */
 .contact-section {
-  padding: 80px 10% ;
+  padding: 80px 5%;
   background: #f9f8f6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #1a1a1a;
@@ -1054,5 +1055,437 @@ textarea:focus {
   100% {
     top: 6px;
     opacity: 1;
+  }
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+.hamburger-menu span {
+  width: 100%;
+  height: 3px;
+  background-color: #d4af37;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #1a365d;
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .navbar-links.active {
+    right: 0;
+  }
+
+  .navbar-links a {
+    padding: 15px 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  }
+
+  .navbar-links a:last-child {
+    border-bottom: none;
+  }
+
+  .connect-btn {
+    margin-top: 20px;
+    text-align: center !important;
+  }
+
+  /* Hamburger Animation */
+  .hamburger-menu.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* Hide phone numbers on mobile */
+  .navbar-contact {
+    display: none;
+  }
+
+  /* Adjust logo size */
+  .navbar-logo {
+    height: 50px;
+  }
+}
+
+/* Add overlay when menu is open */
+@media (max-width: 768px) {
+  .navbar-links::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+
+  .navbar-links.active::before {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Contact Section Responsive Styles */
+.contact-section {
+  padding: 80px 5%;
+  background: #f9f8f6;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Form Box */
+.contact-form-box {
+  flex: 1 1 480px;
+  background: #fff;
+  padding: 45px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Contact Info Box */
+.contact-info-box {
+  flex: 1 1 400px;
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive Styles for Both Sections */
+@media (max-width: 768px) {
+  /* Competitive Edge Section */
+  .benefits-list {
+    padding: 25px;
+    margin: 0 15px;
+  }
+
+  .benefits-list h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .benefits-list h3 .underline {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .benefits-list li {
+    padding: 12px 0;
+  }
+
+  .benefits-list li .icon-wrapper {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+
+  .benefits-list li h4 {
+    font-size: 1rem;
+  }
+
+  .benefits-list li p {
+    font-size: 0.9rem;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .contact-container {
+    gap: 30px;
+  }
+
+  .contact-form-box,
+  .contact-info-box {
+    padding: 25px 20px;
+    width: 100%;
+  }
+
+  .form-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .form-title .underline {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-group label {
+    font-size: 14px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    color: #34495e;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .submit-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  /* Contact Info Box Mobile Styles */
+  .logo-box img {
+    max-width: 180px;
+  }
+
+  .info-title {
+    font-size: 28px;
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+
+  .info-item {
+    gap: 15px;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .info-item h3 {
+    font-size: 16px;
+  }
+
+  .info-item p {
+    font-size: 14px;
+  }
+
+  .social-section h3 {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Competitive Edge Section */
+  .benefits-list {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .benefits-list h3 {
+    font-size: 1.2rem;
+  }
+
+  .benefits-list li {
+    padding: 10px 0;
+  }
+
+  .benefits-list li .icon-wrapper {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+
+  .benefits-list li h4 {
+    font-size: 0.95rem;
+  }
+
+  .benefits-list li p {
+    font-size: 0.85rem;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 30px 15px;
+  }
+
+  .contact-form-box,
+  .contact-info-box {
+    padding: 20px 15px;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .input-group label {
+    font-size: 13px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .radio-group {
+    gap: 8px;
+  }
+
+  .radio-group label {
+    gap: 4px;
+  }
+
+  .submit-btn {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
+  /* Contact Info Box */
+  .logo-box img {
+    max-width: 150px;
+  }
+
+  .info-title {
+    font-size: 24px;
+  }
+
+  .info-card {
+    padding: 15px;
+  }
+
+  .info-item {
+    gap: 12px;
+  }
+
+  .icon {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .info-item h3 {
+    font-size: 15px;
+  }
+
+  .info-item p {
+    font-size: 13px;
+  }
+
+  .social-section h3 {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    gap: 12px;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+
+/* Add smooth transitions */
+.benefits-list,
+.contact-form-box,
+.contact-info-box,
+.input-group,
+.info-item,
+.social-icons .icon {
+  transition: all 0.3s ease;
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+  .benefits-list li,
+  .input-group input,
+  .input-group select,
+  .input-group textarea,
+  .submit-btn,
+  .info-item,
+  .social-icons .icon {
+    min-height: 44px;
   }
 }

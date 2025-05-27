@@ -34,13 +34,20 @@
     </div>
   </div>
 
+  <!-- Hamburger Menu Button -->
+  <button class="hamburger-menu" aria-label="Toggle Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
   <!-- Right: Navigation Links -->
   <div class="navbar-links">
     <a href="#home"><i class="fas fa-home"></i> Home</a>
-  <a href="#about"><i class="fas fa-info-circle"></i> About</a>
-  <a href="#services"><i class="fas fa-cogs"></i> Services</a>
-  <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-  <a href="pages/payment.html"><i class="fas fa-credit-card"></i> Pay</a>
+    <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+    <a href="#services"><i class="fas fa-cogs"></i> Services</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="pages/payment.html"><i class="fas fa-credit-card"></i> Pay</a>
     <a href="login.html" class="connect-btn"><i class="fas fa-user"></i> Login</a>
   </div>
 </nav>
@@ -489,6 +496,33 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Hamburger menu functionality
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navLinks = document.querySelector('.navbar-links');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    }
+  });
+
+  // Close menu when clicking on a link
+  document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
 
 </body>
 </html>
