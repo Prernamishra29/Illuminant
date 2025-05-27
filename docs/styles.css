@@ -626,23 +626,26 @@
 
 /* Container */
 .contact-container {
-  max-width: 1100px;
+  /* max-width: 1100px; */ /* Removed to allow full width on desktop */
   margin: 0 auto;
   display: flex;
+  flex-direction: column; /* Change to column for stacking on desktop */
   flex-wrap: wrap;
-  gap: 50px;
-  align-items: flex-start;
+  gap: 30px; /* Adjust gap for stacking */
+  align-items: center; /* Center align items when stacking */
   justify-content: center;
 }
 
 /* Form Box */
 .contact-form-box {
-  flex: 1 1 480px;
+  width: 100%;
+  margin: 0 auto;
   background: #fff;
   padding: 45px 40px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
 }
 .contact-form-box:hover {
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
@@ -754,7 +757,8 @@ textarea:focus {
 
 /* Contact Info Box */
 .contact-info-box {
-  flex: 1 1 400px;
+  width: 100%;
+  margin: 0 auto;
   background: #ffffff;
   padding: 40px 35px;
   border-radius: 12px;
@@ -762,6 +766,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 /* Logo */
@@ -1263,15 +1268,15 @@ textarea:focus {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
 }
 
 /* Form Box */
 .contact-form-box {
-  flex: 1 1 480px;
+  width: 100%;
+  margin: 0 auto;
   background: #fff;
   padding: 45px 40px;
   border-radius: 12px;
@@ -1281,7 +1286,8 @@ textarea:focus {
 
 /* Contact Info Box */
 .contact-info-box {
-  flex: 1 1 400px;
+  width: 100%;
+  margin: 0 auto;
   background: #ffffff;
   padding: 40px 35px;
   border-radius: 12px;
@@ -1333,13 +1339,26 @@ textarea:focus {
   }
 
   .contact-container {
+    flex-direction: column;
     gap: 30px;
+    align-items: center;
   }
 
   .contact-form-box,
   .contact-info-box {
-    padding: 25px 20px;
     width: 100%;
+    max-width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  .contact-form-box {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info-box {
+    margin-bottom: 20px;
   }
 
   .form-title {
