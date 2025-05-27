@@ -39,7 +39,6 @@ body {
 .logo img {
   height: 55px;
   object-fit: contain;
-
 }
 
 nav ul {
@@ -90,6 +89,7 @@ nav ul li a:hover::before {
     height: 100%;
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
 }
+
 /* Modal Base */
 .modal {
   display: none;
@@ -102,8 +102,6 @@ nav ul li a:hover::before {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-
 
 /* Profile Dropdown */
 .profile-dropdown {
@@ -778,20 +776,50 @@ nav ul li a:hover::before {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .dashboard-header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         padding: 1rem;
     }
     
-    nav ul {
-        margin-top: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
+    .dashboard-header nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: rgba(30, 58, 138, 0.95);
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 998;
     }
     
-    nav ul li {
-        margin: 0.5rem;
+    .dashboard-header nav ul.active {
+        right: 0;
     }
     
+    .dashboard-header nav ul li {
+        margin: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 0.5rem;
+    }
+    
+    .dashboard-header nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    .dashboard-header nav ul li a {
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: left;
+    }
+
     .dashboard-widgets {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -851,6 +879,61 @@ nav ul li a:hover::before {
 
     .time-slot {
         width: 100%;
+    }
+
+    /* Show Hamburger Menu on Mobile */
+    .hamburger-menu-dashboard {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+    .hamburger-menu-dashboard span {
+        display: block !important;
+        width: 100% !important;
+        height: 3px !important;
+        background-color: var(--golden) !important;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    
+    .hamburger-menu-dashboard span:not(:last-child) {
+        margin-bottom: 4px !important;
+    }
+
+    /* Hamburger Animation */
+    .hamburger-menu-dashboard.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .hamburger-menu-dashboard.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-menu-dashboard.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* Overlay for blur effect */
+    .dashboard-header nav ul::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: -1;
+    }
+
+    .dashboard-header nav ul.active::before {
+      opacity: 1;
+      visibility: visible;
     }
 }
 
@@ -1044,5 +1127,66 @@ nav ul li a:hover::before {
 
     .form-group input {
         padding: 0.75rem;
+    }
+}
+
+/* Hamburger Menu Styles (Hidden by default on Desktop) */
+.hamburger-menu-dashboard {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+    position: relative;
+}
+
+.hamburger-menu-dashboard span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--golden); /* Ensure a visible color */
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    /* Show Hamburger Menu on Mobile */
+    .hamburger-menu-dashboard {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+    .hamburger-menu-dashboard span {
+        display: block !important;
+        width: 100% !important;
+        height: 3px !important;
+        background-color: var(--golden) !important;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    
+    .hamburger-menu-dashboard span:not(:last-child) {
+        margin-bottom: 4px !important;
+    }
+
+    /* Hamburger Animation */
+    .hamburger-menu-dashboard.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .hamburger-menu-dashboard.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-menu-dashboard.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
     }
 }

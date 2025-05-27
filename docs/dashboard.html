@@ -40,8 +40,15 @@
           </li>
         </ul>
       </nav>
+      <!-- Hamburger Menu Button for Mobile -->
+    <button class="hamburger-menu-dashboard" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     </header>
-<!-- Profile Popup Modal -->
+
+    <!-- Profile Popup Modal -->
     <div id="profileModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -560,6 +567,15 @@
   logoutBtn.addEventListener("click", function (e) {
     e.preventDefault();
     window.location.href = "login.html"; // Redirect to login page
+  });
+
+  // Hamburger menu functionality
+  const hamburger = document.querySelector('.hamburger-menu-dashboard');
+  const navLinks = document.querySelector('.dashboard-header nav ul');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
   });
   </script>
   </body>
