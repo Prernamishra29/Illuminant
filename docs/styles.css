@@ -883,20 +883,87 @@ textarea:focus {
 }
 
 /* Responsive */
-@media (max-width: 880px) {
-  .contact-container {
-    flex-direction: column;
-    padding: 0 20px;
-  }
+.contact-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Optional but reinforces centering */
+}
+
+.contact-form-box,
+.contact-info-box {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  
+}
+.form-title,
+.info-title {
+  text-align: center;
+}
+/* 
+//For small mobile devices  this code is only for the size of filed in the contct section*/
+@media (max-width: 768px) {
   .contact-form-box,
   .contact-info-box {
-    flex: unset;
     width: 100%;
+    max-width: 100%;
+    padding: 25px 15px;
+    box-sizing: border-box;
   }
-  .input-row {
+
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .radio-group {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .radio-group label {
+    flex: 1 1 45%;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 14px;
+  }
+  
+}
+@media (max-width: 480px) {
+  .radio-group {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .radio-group label {
+    font-size: 14px;
+    gap: 6px;
   }
 }
+
+/* 
+//For extreme small screen devices */
+
+@media (max-width: 480px) {
+  .contact-form-box,
+  .contact-info-box {
+    padding: 20px 10px;
+  }
+
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
 
 .footer-container {
   background: linear-gradient(135deg, #0a2342 0%, #1a4b8c 100%);
