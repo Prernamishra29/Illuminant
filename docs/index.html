@@ -278,62 +278,67 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section  id="contact" class="contact-section">
-  
-    <!-- Left Column - Contact Form -->
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <!-- Get In Touch Form Box -->
     <div class="contact-form-box">
       <h2 class="form-title">
-        <span class="highlight">Get In Touch</span>
+        Connect with Us
         <span class="underline"></span>
       </h2>
-      <form>
+      <form id="contactForm">
         <div class="input-row">
           <div class="input-group">
-            <label for="first-name">First Name *</label>
-            <input id="first-name" type="text" required placeholder="John" />
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" placeholder="John" required>
           </div>
           <div class="input-group">
-            <label for="last-name">Last Name *</label>
-            <input id="last-name" type="text" required placeholder="Doe" />
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" placeholder="Doe" required>
           </div>
         </div>
         <div class="input-group">
           <label for="email">Email *</label>
-          <input id="email" type="email" required placeholder="your@email.com" />
+          <input type="email" id="email" placeholder="your@email.com" required>
         </div>
         <div class="input-group">
-          <label for="company">Company Name</label>
-          <input id="company" type="text" placeholder="Your Company" />
+          <label for="companyName">Company Name</label>
+          <input type="text" id="companyName" placeholder="Your Company">
         </div>
         <div class="input-group">
-          <label for="timeslot">Available Time Slot *</label>
-          <select id="timeslot" required>
-            <option value="" disabled selected>Choose a time</option>
-            <option value="9-11am">9:00 AM - 11:00 AM</option>
-            <option value="11-1pm">11:00 AM - 1:00 PM</option>
-            <option value="2-4pm">2:00 PM - 4:00 PM</option>
-            <option value="4-6pm">4:00 PM - 6:00 PM</option>
+          <label for="timeSlot">Available Time Slot *</label>
+          <select id="timeSlot" required>
+            <option value="">Choose a time</option>
+            <!-- Add actual time slots here -->
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
           </select>
         </div>
         <div class="input-group">
           <label>Would you like a video demo?</label>
           <div class="radio-group">
-            <label><input type="radio" name="video-demo" value="Yes" /> Yes</label>
-            <label><input type="radio" name="video-demo" value="No" checked /> No</label>
+            <label for="demoYes">
+              <input type="radio" id="demoYes" name="videoDemo" value="yes" required> Yes
+            </label>
+            <label for="demoNo">
+              <input type="radio" id="demoNo" name="videoDemo" value="no" required> No
+            </label>
           </div>
         </div>
         <div class="input-group">
           <label for="message">Message</label>
-          <textarea id="message" rows="5" placeholder="How can we help you?"></textarea>
+          <textarea id="message" placeholder="How can we help you?" rows="4"></textarea>
         </div>
         <button type="submit" class="submit-btn">Submit</button>
       </form>
     </div>
 
-    <!-- Right Column - Contact Info -->
+    <!-- Contact Info Box -->
     <div class="contact-info-box">
       <div class="logo-box">
-        <img src="assets/LOGO_Vitam.png" alt="Illuminant Logo" />
+          <img src="assets/navLogo.png" alt="Illuminant Vitam Solutions Logo">
       </div>
       <h2 class="info-title">Contact Us</h2>
       <div class="info-card">
@@ -341,51 +346,40 @@
           <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
           <div>
             <h3>Our Office</h3>
-            <p>
-              ILLUMINANT VITAM SOLUTIONS, LLC <br />
-              2055 Wood Street Ste 120 <br />
-              Sarasota, Florida 34237
-            </p>
+            <p>ILLUMINANT VITAM SOLUTIONS, LLC<br>2055 Wood Street Ste 120<br>Sarasota, Florida 34237</p>
           </div>
         </div>
         <div class="info-item">
-          <div class="icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="icon"><i class="fas fa-phone"></i></div>
           <div>
             <h3>Call Us</h3>
-            <p>941 315-7157<br />Mon-Fri, 9am-6pm EST</p>
+            <p>941 315-7157<br>Mon-Fri, 9am-6pm EST</p>
           </div>
         </div>
         <div class="info-item">
           <div class="icon"><i class="fas fa-envelope"></i></div>
           <div>
             <h3>Email Us</h3>
-            <p>info@illuminantvitam.com<br />illuminantvitam.com</p>
+            <p>info@illuminantvitam.com<br>illuminantvitam.com</p>
           </div>
         </div>
       </div>
       <div class="social-section">
-        <h3><span class="highlight">Follow Us</span></h3>
+        <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="https://illuminantvitam.com" target="_blank" class="icon website" rel="noopener" aria-label="Website">
-            <i class="fas fa-globe"></i>
-          </a>
-          <a href="http://www.linkedin.com/company/illuminant-vitam-solutions-llc" target="_blank" class="icon linkedin" rel="noopener" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="mailto:info@illuminantvitam.com" class="icon email" rel="noopener" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="#" target="_blank" class="icon instagram" rel="noopener" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61576273297808" target="_blank" class="icon facebook" rel="noopener" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
+          <a href="https://www.facebook.com/profile.php?id=61576273297808" class="icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://www.linkedin.com/company/illuminant-vitam-solutions-llc" class="icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:info@illuminantvitam.com" class="icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+           <!-- Assuming you want Instagram, if not remove -->
+          <a href="#" class="icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+           <!-- Assuming you want website, if not remove -->
+          <a href="#" class="icon" aria-label="Website"><i class="fas fa-globe"></i></a>
         </div>
       </div>
     </div>
-  
+  </div>
 </section>
+
 <!---FOOTER---->
 <footer class="footer-container">
   <div class="footer-inner">

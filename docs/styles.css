@@ -617,340 +617,6 @@
 }
 
 /* Contact Section */
-.contact-section {
-  padding: 80px 5%;
-  background: #f9f8f6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #1a1a1a;
-}
-
-/* Container */
-.contact-container {
-  /* max-width: 1100px; */ /* Removed to allow full width on desktop */
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column; /* Change to column for stacking on desktop */
-  flex-wrap: wrap;
-  gap: 30px; /* Adjust gap for stacking */
-  align-items: center; /* Center align items when stacking */
-  justify-content: center;
-}
-
-/* Form Box */
-.contact-form-box {
-  width: 100%;
-  margin: 0 auto;
-  background: #fff;
-  padding: 45px 40px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-  box-sizing: border-box;
-}
-.contact-form-box:hover {
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
-}
-
-/* Form Title */
-.form-title {
-  font-size: 30px;
-  color: #2c3e50;
-  margin-bottom: 28px;
-  position: relative;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.form-title .highlight {
-  color: #d4af37;
-}
-.form-title .underline {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 80px;
-  height: 4px;
-  background-color: #d4af37;
-  border-radius: 2px;
-}
-
-/* Input Rows */
-.input-row {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 22px;
-}
-
-/* Input Group */
-.input-group {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 22px;
-}
-.input-group label {
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #34495e;
-  font-size: 15px;
-}
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 14px 15px;
-  border: 1.8px solid #ccc;
-  border-radius: 8px;
-  background-color: #fafafa;
-  font-size: 15px;
-  font-weight: 400;
-  color: #2d2d2d;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  font-family: inherit;
-  resize: vertical;
-}
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: #d4af37;
-  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
-}
-
-/* Radio Group */
-.radio-group {
-  display: flex;
-  gap: 28px;
-}
-.radio-group label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  color: #34495e;
-  cursor: pointer;
-  font-size: 15px;
-}
-.radio-group input[type="radio"] {
-  cursor: pointer;
-  accent-color: #d4af37;
-}
-
-/* Submit Button */
-.submit-btn {
-  background-color: #d4af37;
-  color: #1a1a1a;
-  border: none;
-  padding: 16px 30px;
-  font-size: 17px;
-  font-weight: 700;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 100%;
-  transition: background-color 0.35s ease, box-shadow 0.35s ease;
-  letter-spacing: 0.8px;
-  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.4);
-}
-.submit-btn:hover {
-  background-color: #c49c20;
-  box-shadow: 0 6px 14px rgba(196, 156, 32, 0.6);
-}
-
-/* Contact Info Box */
-.contact-info-box {
-  width: 100%;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 40px 35px;
-  border-radius: 12px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-/* Logo */
-.logo-box {
-  margin-bottom: 30px;
-}
-.logo-box img {
-  max-width: 220px;
-  height: auto;
-  filter: drop-shadow(0 0 3px rgba(212, 175, 55, 0.5));
-  
-}
-
-/* Info Title */
-.info-title {
-  font-size: 34px;
-  color: #d4af37;
-  font-weight: 700;
-  margin-bottom: 25px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-/* Info Card */
-.info-card {
-  width: 100%;
-  background: rgba(212, 175, 55, 0.1);
-  padding: 28px;
-  border-radius: 12px;
-  margin-bottom: 35px;
-}
-
-/* Info Items */
-.info-item {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 22px;
-}
-.icon {
-  margin-top: 15px;
-  font-size: 24px;
-  color: #d4af37;
-  min-width: 38px;
-  text-align: center;
-  line-height: 38px;
-  background-color: #1a365d;     /* Add this */
-  border-radius: 50%;          /* Make it circular */
-  width: 38px;                 /* Set width */
-  height: 38px;                /* Set height */
-}
-
-.info-item h3 {
-  font-size: 18px;
-  margin-bottom: 6px;
-  color: #2c3e50;
-  font-weight: 700;
-}
-.info-item p {
-  font-size: 14.5px;
-  color: #555;
-  line-height: 1.45;
-  margin: 0;
-}
-
-/* Social Section */
-.social-section {
-  text-align: center;
-  width: 100%;
-}
-.social-section h3 {
-  font-weight: 700;
-  color: #2c3e50;
-  font-size: 20px;
-  margin-bottom: 22px;
-}
-.social-section .highlight {
-  color: #d4af37;
-}
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Social Icons Styles */
-.icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
-  color: white;
-  font-size: 20px;
-}
-.icon.website {
-  background-color: #d4af37;
-}
-.icon.linkedin {
-  background-color: #0077b5;
-}
-.icon.email {
-  background-color: #34a853;
-}
-.icon.instagram {
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-}
-.icon.facebook {
-  background-color: #1877f2;
-}
-
-/* Icon Hover Effects */
-.icon:hover {
-  filter: brightness(1.2);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
-}
-
-/* Responsive */
-.contact-container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Optional but reinforces centering */
-}
-
-.contact-form-box,
-.contact-info-box {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 25px 20px;
-  box-sizing: border-box;
-  
-}
-.form-title,
-.info-title {
-  text-align: center;
-}
-/* 
-//For small mobile devices  this code is only for the size of filed in the contct section*/
-@media (max-width: 768px) {
-  .contact-form-box,
-  .contact-info-box {
-    width: 100%;
-    max-width: 100%;
-    padding: 25px 15px;
-    box-sizing: border-box;
-  }
-
-  .input-group input,
-  .input-group select,
-  .input-group textarea {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-  .radio-group {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  
-  .radio-group label {
-    flex: 1 1 45%;
-    justify-content: flex-start;
-    gap: 8px;
-    font-size: 14px;
-  }
-  
-}
-@media (max-width: 480px) {
-  .radio-group {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .radio-group label {
-    font-size: 14px;
-    gap: 6px;
-  }
-}
 
 /* 
 //For extreme small screen devices */
@@ -1268,26 +934,27 @@ textarea:focus {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
 }
 
 /* Form Box */
 .contact-form-box {
-  width: 100%;
-  margin: 0 auto;
+  flex: 1;
+  min-width: 400px;
   background: #fff;
   padding: 45px 40px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
 }
 
 /* Contact Info Box */
 .contact-info-box {
-  width: 100%;
-  margin: 0 auto;
+  flex: 1;
+  min-width: 300px;
   background: #ffffff;
   padding: 40px 35px;
   border-radius: 12px;
@@ -1295,49 +962,214 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Styles for elements within the form box */
+.form-title {
+  font-size: 32px;
+  color: #e4bb21;
+  margin-bottom: 30px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.form-title .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #d4af37;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-row .input-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 1rem;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  color: #34495e;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.radio-group input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background-color: #d4af37;
+  color: #0a2342;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+  background-color: #f1c40f;
+  transform: translateY(-2px);
+}
+
+
+/* Styles for elements within the info box */
+.logo-box {
+  margin-bottom: 20px;
+}
+
+.logo-box img {
+  max-width: 100%;
+    height: 100%;
+}
+
+.info-title {
+  font-size: 36px;
+  color: #e4bb21;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.info-card {
+  width: 100%;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-item .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #d4af37;
+  color: #0a2342;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-item h3 {
+  font-size: 18px;
+  color: #0c2441;
+  margin: 0 0 5px 0;
+}
+
+.info-item p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.social-section h3 {
+  font-size: 20px;
+  color: #0a2342;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-icons .icon {
+  width: 45px;
+  height: 45px;
+  background-color: #0a2342;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.social-icons .icon:hover {
+  background-color: #1a365d;
 }
 
 /* Responsive Styles for Both Sections */
-@media (max-width: 768px) {
-  /* Competitive Edge Section */
-  .benefits-list {
-    padding: 25px;
-    margin: 0 15px;
-  }
-
-  .benefits-list h3 {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-
-  .benefits-list h3 .underline {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .benefits-list li {
-    padding: 12px 0;
-  }
-
-  .benefits-list li .icon-wrapper {
-    width: 32px;
-    height: 32px;
-    margin-right: 12px;
-  }
-
-  .benefits-list li h4 {
-    font-size: 1rem;
-  }
-
-  .benefits-list li p {
-    font-size: 0.9rem;
-  }
-
-  /* Contact Section */
-  .contact-section {
-    padding: 40px 20px;
-  }
-
+@media (max-width: 992px) {
   .contact-container {
     flex-direction: column;
     gap: 30px;
@@ -1347,25 +1179,17 @@ textarea:focus {
   .contact-form-box,
   .contact-info-box {
     width: 100%;
-    max-width: 100%;
-    padding: 25px 20px;
-    box-sizing: border-box;
+    max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .contact-form-box {
-    margin-bottom: 20px;
-  }
-  
-  .contact-info-box {
-    margin-bottom: 20px;
+    padding: 35px 30px;
   }
 
-  .form-title {
-    font-size: 24px;
+  .form-title,
+  .info-title {
+    font-size: 28px;
     text-align: center;
   }
-
+    
   .form-title .underline {
     left: 50%;
     transform: translateX(-50%);
@@ -1376,63 +1200,55 @@ textarea:focus {
     gap: 15px;
   }
 
-  .input-group {
-    margin-bottom: 15px;
-  }
-
-  .input-group label {
-    font-size: 14px;
-  }
-
-  input,
-  select,
-  textarea {
-    padding: 12px;
-    font-size: 14px;
-  }
-
-  .radio-group {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .radio-group label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-weight: 600;
-    color: #34495e;
-    cursor: pointer;
-    font-size: 15px;
-  }
-
-  .submit-btn {
-    padding: 12px 20px;
-    font-size: 16px;
-  }
-
-  /* Contact Info Box Mobile Styles */
-  .logo-box img {
-    max-width: 180px;
-  }
-
-  .info-title {
-    font-size: 28px;
-  }
-
-  .info-card {
-    padding: 20px;
+  .input-row .input-group {
+    flex: none;
   }
 
   .info-item {
-    gap: 15px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
-  .icon {
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
-    line-height: 32px;
+  .info-item .icon {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 30px 15px;
+  }
+  
+  .contact-form-box,
+  .contact-info-box {
+    padding: 25px 20px;
+  }
+
+  .form-title,
+  .info-title {
+    font-size: 24px;
+  }
+
+  .input-group label {
+    font-size: 0.9rem;
+  }
+
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .logo-box img {
+    max-width: 150px;
   }
 
   .info-item h3 {
@@ -1447,133 +1263,14 @@ textarea:focus {
     font-size: 18px;
   }
 
-  .social-icons {
-    gap: 15px;
-  }
-
-  .icon {
+  .social-icons .icon {
     width: 40px;
     height: 40px;
     font-size: 18px;
   }
 }
 
-@media (max-width: 480px) {
-  /* Competitive Edge Section */
-  .benefits-list {
-    padding: 20px;
-    margin: 0 10px;
-  }
-
-  .benefits-list h3 {
-    font-size: 1.2rem;
-  }
-
-  .benefits-list li {
-    padding: 10px 0;
-  }
-
-  .benefits-list li .icon-wrapper {
-    width: 28px;
-    height: 28px;
-    margin-right: 10px;
-  }
-
-  .benefits-list li h4 {
-    font-size: 0.95rem;
-  }
-
-  .benefits-list li p {
-    font-size: 0.85rem;
-  }
-
-  /* Contact Section */
-  .contact-section {
-    padding: 30px 15px;
-  }
-
-  .contact-form-box,
-  .contact-info-box {
-    padding: 20px 15px;
-  }
-
-  .form-title {
-    font-size: 22px;
-  }
-
-  .input-group label {
-    font-size: 13px;
-  }
-
-  input,
-  select,
-  textarea {
-    padding: 10px;
-    font-size: 13px;
-  }
-
-  .radio-group {
-    gap: 8px;
-  }
-
-  .radio-group label {
-    gap: 4px;
-  }
-
-  .submit-btn {
-    padding: 10px 16px;
-    font-size: 15px;
-  }
-
-  /* Contact Info Box */
-  .logo-box img {
-    max-width: 150px;
-  }
-
-  .info-title {
-    font-size: 24px;
-  }
-
-  .info-card {
-    padding: 15px;
-  }
-
-  .info-item {
-    gap: 12px;
-  }
-
-  .icon {
-    width: 28px;
-    height: 28px;
-    font-size: 14px;
-    line-height: 28px;
-  }
-
-  .info-item h3 {
-    font-size: 15px;
-  }
-
-  .info-item p {
-    font-size: 13px;
-  }
-
-  .social-section h3 {
-    font-size: 16px;
-  }
-
-  .social-icons {
-    gap: 12px;
-  }
-
-  .icon {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-  }
-}
-
 /* Add smooth transitions */
-.benefits-list,
 .contact-form-box,
 .contact-info-box,
 .input-group,
@@ -1584,7 +1281,6 @@ textarea:focus {
 
 /* Improve touch targets for mobile */
 @media (max-width: 768px) {
-  .benefits-list li,
   .input-group input,
   .input-group select,
   .input-group textarea,
