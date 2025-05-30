@@ -30,12 +30,19 @@
   color: #d4af37;
   font-size: 14px;
 }
+.fax-icon {
+  color: #d4af37;
+  font-size: 14px;
+}
 
 .phone-numbers {
   color: #d4af37;
   font-size: 14px;
 }
-
+.fax-numbers {
+  color: #d4af37;
+  font-size: 14px;
+}
 .navbar-links {
   display: flex;
   align-items: center;
