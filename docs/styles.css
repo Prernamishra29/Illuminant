@@ -1,3 +1,14 @@
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden !important;
+  }
+  .dashboard-container {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+
 .navbar {
   display: flex;
   justify-content: space-between;

@@ -1,3 +1,11 @@
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden !important;
+  }
+  .dashboard-container {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
 :root {
     --golden: #D4AF37;
     --blue: #1E3A8A;
