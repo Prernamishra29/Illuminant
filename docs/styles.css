@@ -63,6 +63,26 @@ html, body {
   text-decoration: none;
   color: #d4af37;
   font-weight: 500;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #d4af37;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: #e4bb21; /* Slightly darker gold on hover */
 }
 
 .connect-btn {
@@ -416,7 +436,7 @@ html, body {
 /* Modern Services Section Styles */
 .services-section {
   padding: 100px 0;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(71, 68, 68, 0.8)), url('assets/ServiceBG.jpg');
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 10, 39, 0.8)), url('assets/ServiceBG.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -593,12 +613,12 @@ html, body {
 }
 
 .card-icon {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   transition: transform 0.4s ease;
   padding: 0;
 }
@@ -704,9 +724,9 @@ html, body {
   }
   
   .card-icon {
-    width: 65px;
-    height: 65px;
-    margin-bottom: 25px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
   }
   
   .card-icon i {
@@ -1500,7 +1520,6 @@ html, body {
   color: #d4af37;
   font-weight: 600;
   margin-bottom: 20px;
-  
   font-style: italic;
 }
 
@@ -1536,9 +1555,10 @@ html, body {
 
 .about-section-item {
   padding: 30px;
-  background: #f8f9fa;
+  background: #0b2648;
   border-radius: 10px;
   border-left: 4px solid #d4af37;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .about-section-item h3 {
@@ -1561,9 +1581,18 @@ html, body {
 }
 
 .about-section-item p {
-  margin-bottom: 20px;
-  color: #0a2342;
+  color: #ffffff;
   line-height: 1.8;
+}
+
+/* Increased specificity for list items within about section items */
+.about-sections .about-section-item .feature-list li {
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+.about-section-item .feature-list li:before {
+    color: #d4af37;
 }
 
 .founder-section {
@@ -1571,9 +1600,10 @@ html, body {
   gap: 40px;
   align-items: center;
   padding: 30px;
-  background: #f8f9fa;
+  background: #1a365d;
   border-radius: 10px;
   border-left: 4px solid #d4af37;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .founder-content {
@@ -1601,8 +1631,18 @@ html, body {
 
 .founder-content p {
   margin-bottom: 20px;
-  color: #0a2342;
+  color: #ffffff;
   line-height: 1.8;
+}
+
+/* Increased specificity for list items within founder section */
+.about-sections .founder-section .feature-list li {
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+.founder-content .feature-list li:before {
+    color: #d4af37;
 }
 
 .founder-image {
@@ -1649,15 +1689,45 @@ html, body {
   }
 }
 
-.philosophy-section .feature-list li {
-  color: #0a2342;
+/* Ensuring philosophy section list items are also white with appropriate specificity */
+.about-sections .about-section-item.philosophy-section .feature-list li {
+  color: #ffffff;
   font-weight: 500;
 }
 
-.philosophy-section .feature-list li:before {
-  color: #d4af37;
+.about-sections .about-section-item.philosophy-section .feature-list li:before {
+    color: #d4af37;
 }
 
 .philosophy-section .feature-list li strong {
   color: #d4af37;
+}
+
+/* Footer Social Icons */
+.footer-social-icons .icon {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-social-icons .icon:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #1a365d;
+  line-height: 1.6;
 }
