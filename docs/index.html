@@ -19,6 +19,7 @@
   }
 </style>
 
+
 </head>
 <body>
 
@@ -93,63 +94,60 @@
 
 <section id="about" class="about-section">
   <div class="about-container">
-    <div class="about-content">
-      <div class="about-text">
+    <div class="about-flex">
+      <!-- Left: Content -->
+      <div class="about-left" data-aos="fade-right">
         <h2 class="section-title">
           <span class="highlight">About Illuminant Vitam</span>
           <span class="underline"></span>
         </h2>
-        <div class="about-description">
-          <p class="tagline">Where Insight Meets Impact</p>
-          <p>At Illuminant Vitam Solutions, LLC, we believe that meaningful business transformation begins with clarity. Our name — Illuminant (to light the way) and Vitam (Latin for life) — reflects our mission: to bring illumination and vitality to every facet of your brand and business.</p>
-          
-          <p>Based in Sarasota, Florida, we are a strategic marketing consultancy dedicated to helping businesses elevate their operations, refine their messaging, and create sustainable growth strategies that align with both vision and values.</p>
-          
-          <p>Whether you're an emerging entrepreneur or an evolving company, we help you bridge the gap between your potential and your performance.</p>
+        <p class="tagline">Where Insight Meets Impact</p>
+        <p class="intro-paragraph">At Illuminant Vitam Solutions, LLC, we empower businesses with insight, purpose, and clarity. Our name reflects our mission — to light the way and breathe life into your brand strategy.</p>
 
-          <div class="about-sections">
-            <div class="about-section-item">
-              <h3>What We Do</h3>
-              <p>We help purpose-driven businesses:</p>
-              <ul class="feature-list">
-                <li>Uncover operational blind spots and turn chaos into clarity</li>
-                <li>Design strategic brand experiences that inspire trust and engagement</li>
-                <li>Align internal systems with external growth for sustainable momentum</li>
-                <li>Create intentional messaging that resonates deeply with ideal clients</li>
-              </ul>
+        <div class="about-cards">
+          <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-lightbulb icon"></i>
+            <div>
+              <h4>Vision-Led Strategy</h4>
+              <p>We align your operations with purpose, helping you see and reach your potential.</p>
             </div>
-            
-            <div class="about-section-item">
-              <h3>Why We Exist</h3>
-              <p>Too often, founders and businesses get stuck in the noise — scattered strategies, inconsistent branding, and lack of alignment between their vision and their execution. At Illuminant Vitam Solutions, LLC, we don't just provide services — we provide insight. Insight that leads to impact.</p>
-              <p>We're here to help you connect the dots, simplify your processes, and rise above the ordinary with a distinct creative edge.</p>
+          </div>
+          <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-bullseye icon"></i>
+            <div>
+              <h4>Creative Precision</h4>
+              <p>Our brand storytelling and design tactics make your message unforgettable.</p>
             </div>
-            
-            <div class="founder-section">
-              <div class="founder-content">
-                <h3>Meet the Founder</h3>
-                <p>Waxela Sananda is a creative entrepreneur and strategic visionary with over 30 years of experience building businesses across both the online and brick-and-mortar space. Her journey includes launching and scaling multiple brands, including a 15-year run as a successful retail store owner.</p>
-                <p>Waxela brings a unique blend of intuitive clarity and business acumen to her work — combining marketing strategy, creative storytelling, and operational refinement to help brands grow with authenticity and precision.</p>
-              </div>
-              <div class="founder-image">
-                <img src="assets/pp.png" alt="Waxela Sananda - Founder of Illuminant Vitam Solutions" class="founder-img">
-              </div>
+          </div>
+          <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-leaf icon"></i>
+            <div>
+              <h4>Sustainable Growth</h4>
+              <p>We help build systems that scale gracefully and authentically over time.</p>
             </div>
+          </div>
+        </div>
 
-            <div class="about-section-item philosophy-section">
-              <h3>Our Philosophy</h3>
-              <ul class="feature-list">
-                <li><strong>Strategic Alignment</strong> – Everything starts with your why</li>
-                <li><strong>Creative Precision</strong> – Bold ideas deserve thoughtful execution</li>
-                <li><strong>Sustainable Growth</strong> – We don't chase trends — we build legacies</li>
-              </ul>
-            </div>
+        <blockquote class="quote" data-aos="fade-up" data-aos-delay="400">
+          “True impact begins where clarity meets intention.”<br><span>– Waxela Sananda</span>
+        </blockquote>
+      </div>
+
+      <!-- Right: Image + Founder -->
+      <div class="about-right" data-aos="fade-left">
+        <div class="founder-image">
+          <img src="assets/pp.png" alt="Waxela Sananda" class="founder-img" />
+          <div class="founder-bio">
+            <h3>Meet the Founder</h3>
+            <p>Waxela Sananda is a visionary entrepreneur with over 30 years of business and creative leadership. She merges intuitive clarity with solid strategy to guide brands into their next evolution with grace and grit.</p>
+            <p>Her journey includes building multiple brands, running a successful retail venture for 15+ years, and transforming clients' vision into real-world impact.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <!--
 <section id="about" class="why-choose-section">
   <div class="why-choose-decor"></div>
@@ -257,137 +255,155 @@
   </div>
 </section>
 -->
-<section id = "services" class="services-section">
+<section id="services" class="services-section">
   <div class="services-container">
-    <!-- Header Section -->
-    <div class="services-header">
+    <div class="services-header" data-aos="fade-up">
       <div class="services-header-content">
         <h1 class="services-title">Our Consulting Services</h1>
         <p class="services-intro">
-          <em>We align visuals, messaging, and strategy to craft cohesive, compelling
-            brand experiences that elevate your presence across every platform.</em>
+          <em>We align visuals, messaging, and strategy to craft cohesive, compelling brand experiences that elevate your presence across every platform.</em>
         </p>
       </div>
     </div>
-<!-- Modern Cards Grid -->
+
     <div class="modern-cards-grid">
-      <!-- Service 1 -->
-      <div class="modern-card" onclick="openServicePopup(0)">
-        <div class="card-icon">
-          <img src="assets/slogo.png" alt="Illuminant Vitam Solutions Logo" class="card-logo">
-        </div>
+      <!-- Loop Cards -->
+      <div class="modern-card" onclick="openServicePopup(0)" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-icon"><img src="assets/slogo.png" alt="Logo" class="card-logo"></div>
         <div class="card-content">
-          <h3>Service 1: Startup & Enterprise Growth Support</h3>
+          <h3>Startup & Enterprise Growth Support</h3>
           <h4>Clarity, structure, and momentum for every stage of your growth.</h4>
         </div>
       </div>
 
-      <!-- Service 2 -->
-      <div class="modern-card" onclick="openServicePopup(1)">
-        <div class="card-icon">
-          <img src="assets/slogo.png" alt="Illuminant Vitam Solutions Logo" class="card-logo">
-        </div>
+      <div class="modern-card" onclick="openServicePopup(1)" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-icon"><img src="assets/slogo.png" alt="Logo" class="card-logo"></div>
         <div class="card-content">
-          <h3>Service 2: Creative Brand Solutions</h3>
+          <h3>Creative Brand Solutions</h3>
           <h4>Align your brand presence with precision and purpose.</h4>
         </div>
       </div>
 
-      <!-- Service 3 -->
-      <div class="modern-card" onclick="openServicePopup(2)">
-        <div class="card-icon">
-          <img src="assets/slogo.png" alt="Illuminant Vitam Solutions Logo" class="card-logo">
-        </div>
+      <div class="modern-card" onclick="openServicePopup(2)" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-icon"><img src="assets/slogo.png" alt="Logo" class="card-logo"></div>
         <div class="card-content">
-          <h3>Service 3: Strategic Marketing Consulting</h3>
+          <h3>Strategic Marketing Consulting</h3>
           <h4>Purposeful strategies that elevate your brand and move your audience to act.</h4>
         </div>
       </div>
 
-      <!-- Service 4 -->
-      <div class="modern-card" onclick="openServicePopup(3)">
-        <div class="card-icon">
-          <img src="assets/slogo.png" alt="Illuminant Vitam Solutions Logo" class="card-logo">
-        </div>
+      <div class="modern-card" onclick="openServicePopup(3)" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-icon"><img src="assets/slogo.png" alt="Logo" class="card-logo"></div>
         <div class="card-content">
-          <h3>Service 4: Operational Optimization</h3>
+          <h3>Operational Optimization</h3>
           <h4>Clear systems. Smarter workflows. Sustainable growth.</h4>
         </div>
       </div>
 
-      <!-- Service 5 -->
-      <div class="modern-card" onclick="openServicePopup(4)">
-        <div class="card-icon">
-          <img src="assets/slogo.png" alt="Illuminant Vitam Solutions Logo" class="card-logo">
-        </div>
+      <div class="modern-card" onclick="openServicePopup(4)" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-icon"><img src="assets/slogo.png" alt="Logo" class="card-logo"></div>
         <div class="card-content">
-          <h3>Service 5: Digital Transformation Strategy</h3>
+          <h3>Digital Transformation Strategy</h3>
           <h4>Modernize your systems. Elevate your customer experience.</h4>
         </div>
       </div>
 
-      <!-- Service 6 -->
-      <div class="modern-card" onclick="openServicePopup(5)">
-        <div class="card-icon">
-          <img src="assets/slogo.png" alt="Illuminant Vitam Solutions Logo" class="card-logo">
-        </div>
+      <div class="modern-card" onclick="openServicePopup(5)" data-aos="fade-up" data-aos-delay="600">
+        <div class="card-icon"><img src="assets/slogo.png" alt="Logo" class="card-logo"></div>
         <div class="card-content">
-          <h3>Service 6: Long-Term Consulting Partnerships</h3>
+          <h3>Long-Term Consulting Partnerships</h3>
           <h4>Ongoing support, strategic insight, and a partner who evolves with your brand.</h4>
         </div>
       </div>
-      <h2>Ready to Work Together?</h2>
-      <h3>Let's create clarity, connection, and momentum.</h3>
-      <p>Whether you're looking for a one-time engagement or an ongoing
-        consulting relationship, we tailor our support to meet you where you are —
-        and help you go where you're meant to lead.</p>
 
+      <!-- Closing Section -->
+      <div class="full-width-text" data-aos="fade-up" data-aos-delay="700">
+        <h2>Ready to Work Together?</h2>
+        <h3>Let’s create clarity, connection, and momentum.</h3>
+        <p>Whether you're looking for a one-time engagement or an ongoing consulting relationship, we tailor our support to meet you where you are — and help you go where you're meant to lead.</p>
         <ul>
           <li>Request a Discovery Call</li>
           <li><a href="pages/payment.html">Explore Packages</a></li>
           <li>Contact Us for a Customized Proposal</li>
         </ul>
+      </div>
     </div>
-  </div>
-  <div class="opt-service-btn-wrapper">
-    <a href="pages/payment.html" class="opt-service-btn">Partner With Us Today !</a>
+
+    <div class="opt-service-btn-wrapper" data-aos="zoom-in">
+      <a href="pages/payment.html" class="opt-service-btn">Partner With Us Today!</a>
+    </div>
   </div>
 </section>
 
-<!-- CONTACT SECTION -->
+<!--Why Us Section-->
+<section class="why-us-section">
+  <div class="why-us-bg-decor"></div>
+  <div class="container-1200">
+    <div class="section-header">
+      <h2>
+        <span class="highlight">Why Choose Us?</span>
+        <span class="underline"></span>
+      </h2>
+      <p><span>We build bold, beautiful, and scalable solutions tailored to your business goals, with a client-first mindset.</span></p>
+    </div>
+
+    <div class="why-us-grid">
+      <div class="why-card">
+        <div class="icon"><i class="fas fa-bullseye"></i></div>
+        <h4>Goal-Oriented Strategy</h4>
+        <p>Every move is aligned with your mission to achieve tangible success.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+        <h4>Creative Brilliance</h4>
+        <p>Standout ideas with precision execution for modern business growth.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon"><i class="fas fa-rocket"></i></div>
+        <h4>Scalable Solutions</h4>
+        <p>Robust architecture built to evolve as your brand grows.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon"><i class="fas fa-handshake"></i></div>
+        <h4>Client-Centric Focus</h4>
+        <p>Your vision is our blueprint. We deliver results with care and integrity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section id="contact" class="contact-section">
   <div class="contact-container">
-    <!-- Get In Touch Form Box -->
-    <div class="contact-form-box">
-      <h2 class="form-title">
-        Connect with Us
-        <span class="underline"></span>
-      </h2>
+    <!-- Contact Form -->
+    <div class="contact-form-box animate slide-in-left">
+      <h2 class="form-title">Connect with Us<span class="underline"></span></h2>
       <form id="contactForm">
         <div class="input-row">
           <div class="input-group">
             <label for="firstName">First Name *</label>
-            <input type="text" id="firstName" placeholder="John" required>
+            <input type="text" id="firstName" placeholder="John" required />
           </div>
           <div class="input-group">
             <label for="lastName">Last Name *</label>
-            <input type="text" id="lastName" placeholder="Doe" required>
+            <input type="text" id="lastName" placeholder="Doe" required />
           </div>
         </div>
         <div class="input-group">
           <label for="email">Email *</label>
-          <input type="email" id="email" placeholder="your@email.com" required>
+          <input type="email" id="email" placeholder="you@email.com" required />
         </div>
         <div class="input-group">
           <label for="companyName">Company Name</label>
-          <input type="text" id="companyName" placeholder="Your Company">
+          <input type="text" id="companyName" placeholder="Your Company" />
         </div>
         <div class="input-group">
           <label for="timeSlot">Available Time Slot *</label>
           <select id="timeSlot" required>
             <option value="">Choose a time</option>
-            <!-- Add actual time slots here -->
             <option value="morning">Morning</option>
             <option value="afternoon">Afternoon</option>
             <option value="evening">Evening</option>
@@ -396,26 +412,22 @@
         <div class="input-group">
           <label>Would you like a video demo?</label>
           <div class="radio-group">
-            <label for="demoYes">
-              <input type="radio" id="demoYes" name="videoDemo" value="yes" required> Yes
-            </label>
-            <label for="demoNo">
-              <input type="radio" id="demoNo" name="videoDemo" value="no" required> No
-            </label>
+            <label><input type="radio" name="videoDemo" value="yes" required /> Yes</label>
+            <label><input type="radio" name="videoDemo" value="no" required /> No</label>
           </div>
         </div>
         <div class="input-group">
           <label for="message">Message</label>
-          <textarea id="message" placeholder="How can we help you?" rows="4"></textarea>
+          <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
         </div>
         <button type="submit" class="submit-btn">Submit</button>
       </form>
     </div>
 
-    <!-- Contact Info Box -->
-    <div class="contact-info-box">
+    <!-- Contact Info -->
+    <div class="contact-info-box animate slide-in-right">
       <div class="logo-box">
-          <img src="assets/navLogo.png" alt="Illuminant Vitam Solutions Logo">
+        <img src="assets/navLogo.png" alt="Illuminant Vitam Solutions Logo" />
       </div>
       <h2 class="info-title">Contact Us</h2>
       <div class="info-card">
@@ -423,14 +435,14 @@
           <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
           <div>
             <h3>Our Office</h3>
-            <p>ILLUMINANT VITAM SOLUTIONS, LLC<br>2055 Wood Street Ste 120<br>Sarasota, Florida 34237</p>
+            <p>2055 Wood Street Ste 120<br>Sarasota, Florida 34237</p>
           </div>
         </div>
         <div class="info-item">
           <div class="icon"><i class="fas fa-phone"></i></div>
           <div>
             <h3>Call Us</h3>
-            <p>941 315-7157 | 941 216-6228 <br>Mon-Fri, 9am-6pm EST</p>
+            <p>941 315-7157 | 941 216-6228<br>Mon–Fri, 9am–6pm EST</p>
           </div>
         </div>
         <div class="info-item">
@@ -444,13 +456,11 @@
       <div class="social-section">
         <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61576273297808" class="icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="http://www.linkedin.com/company/illuminant-vitam-solutions-llc" class="icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:info@illuminantvitam.com" class="icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
-           <!-- Assuming you want Instagram, if not remove -->
-          <a href="https://www.instagram.com/illuminant_vitam_solutions_llc#"class="icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://x.com/illuminantvitam" class="icon" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-          
+          <a href="https://www.facebook.com/profile.php?id=61576273297808" class="icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://www.linkedin.com/company/illuminant-vitam-solutions-llc" class="icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:info@illuminantvitam.com" class="icon"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.instagram.com/illuminant_vitam_solutions_llc" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/illuminantvitam" class="icon"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
     </div>
