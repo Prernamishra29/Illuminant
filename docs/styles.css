@@ -210,13 +210,6 @@ html, body {
   user-select: none;
 }
 
-#ScrollText {
-  color: white;
-  margin-bottom: 10px;
-  font-size: 0.9rem;
-  transition: all 0.3s;
-}
-
 .scroll-mouse {
   width: 24px;
   height: 40px;
@@ -1659,11 +1652,18 @@ html, body {
   border-radius: 12px;
   background: #1a365d;
   box-shadow: 0 8px 25px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
 }
 
+.about-card:nth-child(1) { animation-delay: 0.2s; }
+.about-card:nth-child(2) { animation-delay: 0.4s; }
+.about-card:nth-child(3) { animation-delay: 0.6s; }
+
 .about-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px) scale(1.02);
   box-shadow: 0 12px 35px rgba(0,0,0,0.12);
 }
 
@@ -1702,6 +1702,7 @@ html, body {
   border-radius: 0px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   text-align: left;
+  animation: fadeIn 1s ease-in;
 }
 
 .founder-bio h3 {
@@ -1732,6 +1733,65 @@ html, body {
   margin-top: 8px;
 }
 
+/* New Sections */
+.extra-section {
+  margin-top: 60px;
+}
+
+.extra-section h3 {
+  font-size: 1.8rem;
+  color: #1a365d;
+  margin-bottom: 20px;
+  border-left: 5px solid #d4af37;
+  padding-left: 15px;
+}
+
+.extra-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #1a365d;
+  margin-bottom: 20px;
+}
+
+.extra-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.extra-section ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 10px;
+  color: #0a2342;
+  font-size: 1rem;
+}
+
+.extra-section ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .about-flex {
@@ -1747,7 +1807,16 @@ html, body {
     align-items: center;
     text-align: center;
   }
+
+  .extra-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .extra-section ul li {
+    font-size: 0.95rem;
+  }
 }
+
 
 /* -----------------------------------------------------Why Us------------------------------------------------ */
 .why-us-section {
