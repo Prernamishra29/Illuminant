@@ -1,364 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Illuminant Solutions</title>
-    <link rel="icon" href="assets/slogo.png" type="image/png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="dashboard.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Illuminant Vitam Solutions</title>
+  <link rel="icon" href="assets/slogo.png" type="image/png" />
+  <link rel="stylesheet" href="dashboard.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-    <!-- Header -->
-    <header class="dashboard-header">
-        <div class="logo">
-            <img src="assets/navLogo.png" alt="Illuminant Solutions Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fas fa-briefcase"></i> My Services</a></li>
-                <li><a href="#"><i class="fas fa-chart-line"></i> Insights</a></li>
-                <li><a href="#"><i class="fas fa-file-invoice-dollar"></i> Invoices</a></li>
-                <li><a href="#"><i class="fas fa-headset"></i> Support</a></li>
-                <li class="profile-dropdown">
-                    <div class="profile-icon">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <div class="dropdown-content">
-                        <a href="#"><i class="fas fa-user"></i> Profile</a>
-                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <button class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">
+        <img src="assets/navLogo.png" alt="Logo" class="navbar-logo">
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="pages/payment.html" class="btn-pay"><i class="fas fa-credit-card"></i> Pay Now</a>
+      <a href="index.html" class="btn-login"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </header>
+
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <h2>Dashboard</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#"><i class="fas fa-chart-line"></i> Overview</a>
+        <a href="#"><i class="fas fa-briefcase"></i> Projects</a>
+        <a href="#"><i class="fas fa-users"></i> Clients</a>
+        <a href="#"><i class="fas fa-envelope-open-text"></i> Messages</a>
+        <a href="#"><i class="fas fa-cogs"></i> Settings</a>
+        <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </nav>
+    </aside>
 
     <!-- Main Content -->
-    <main class="dashboard-container">
-        <!-- Welcome Section -->
-        <section class="welcome-section">
-            <h1>Welcome Back, John Doe!</h1>
-            <p>Here's what's happening with your marketing strategies today.</p>
-        </section>
-
-        <!-- Dashboard Widgets -->
-        <div class="dashboard-widgets">
-            <!-- Quick Stats -->
-            <div class="widget quick-stats">
-                <h2>Your Quick Stats</h2>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-value">0</div>
-                        <div class="stat-label">Active Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">0</div>
-                        <div class="stat-label">Completed</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">0</div>
-                        <div class="stat-label">Pending</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">100%</div>
-                        <div class="stat-label">Success Rate</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Services -->
-            <div class="widget services">
-                <h2>Select Your Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-bullseye"></i></div>
-                        <h3>Brand Strategy</h3>
-                        <p>Develop a powerful brand identity</p>
-                        <button class="select-btn">Select</button>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-users"></i></div>
-                        <h3>Social Media</h3>
-                        <p>Engage with your audience</p>
-                        <button class="select-btn">Select</button>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-headset"></i></div>
-                        <h3>Support</h3>
-                        <p>Get expert assistance</p>
-                        <button class="select-btn">Select</button>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-calendar-alt"></i></div>
-                        <h3>Scheduling</h3>
-                        <p>Plan your consultations</p>
-                        <button class="select-btn">Select</button>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-search-dollar"></i></div>
-                        <h3>SEO Optimization</h3>
-                        <p>Improve search rankings</p>
-                        <button class="select-btn">Select</button>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Sales</h3>
-                        <p>Boost your revenue</p>
-                        <button class="select-btn">Select</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Current Projects -->
-            <div class="widget current-projects">
-                <h2>Your Current Projects</h2>
-                <div class="projects-list">
-                    <div class="project-item">
-                        <div class="project-info">
-                            <h3>Website Redesign</h3>
-                            <p>Status: <span class="status in-progress">In Progress</span></p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 65%"></div>
-                            </div>
-                        </div>
-                        <div class="project-actions">
-                            <button class="action-btn view-btn">View</button>
-                            <button class="action-btn message-btn">Message Consultant</button>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-info">
-                            <h3>Social Media Campaign</h3>
-                            <p>Status: <span class="status review">Under Review</span></p>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="project-actions">
-                            <button class="action-btn view-btn">View</button>
-                            <button class="action-btn message-btn">Message Consultant</button>
-                        </div>
-                    </div>
-                </div>
-                <button class="view-all-btn">View All Projects</button>
-            </div>
-
-            <!-- Recent Activity -->
-            <div class="widget recent-activity">
-                <h2>Recent Activity</h2>
-                <ul class="activity-list">
-                    <li>
-                        <i class="fas fa-file-alt activity-icon"></i>
-                        <div class="activity-content">
-                            <p>New proposal received for "Website Redesign"</p>
-                            <span class="activity-time">2 hours ago</span>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle activity-icon"></i>
-                        <div class="activity-content">
-                            <p>Your "Social Media Campaign" project moved to review</p>
-                            <span class="activity-time">1 day ago</span>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-comment activity-icon"></i>
-                        <div class="activity-content">
-                            <p>New message from your consultant</p>
-                            <span class="activity-time">2 days ago</span>
-                        </div>
-                    </li>
-                </ul>
-                <button class="view-all-btn">View All Activity</button>
-            </div>
-
-            <!-- Consultation Booking -->
-            <div class="widget consultation-booking">
-                <h2>Schedule a Consultation</h2>
-                <div class="booking-calendar">
-                    <div class="calendar-header">
-                        <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
-                        <h3>June 2023</h3>
-                        <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="calendar-grid">
-                        <div class="day-header">Sun</div>
-                        <div class="day-header">Mon</div>
-                        <div class="day-header">Tue</div>
-                        <div class="day-header">Wed</div>
-                        <div class="day-header">Thu</div>
-                        <div class="day-header">Fri</div>
-                        <div class="day-header">Sat</div>
-                        
-                        <div class="day disabled">28</div>
-                        <div class="day disabled">29</div>
-                        <div class="day disabled">30</div>
-                        <div class="day disabled">31</div>
-                        <div class="day">1</div>
-                        <div class="day">2</div>
-                        <div class="day">3</div>
-                        <div class="day">4</div>
-                        <div class="day">5</div>
-                        <div class="day">6</div>
-                        <div class="day available">7</div>
-                        <div class="day available">8</div>
-                        <div class="day available">9</div>
-                        <div class="day available">10</div>
-                        <div class="day">11</div>
-                        <div class="day">12</div>
-                        <div class="day">13</div>
-                        <div class="day">14</div>
-                        <div class="day">15</div>
-                        <div class="day">16</div>
-                        <div class="day">17</div>
-                        <div class="day">18</div>
-                        <div class="day">19</div>
-                        <div class="day">20</div>
-                        <div class="day">21</div>
-                        <div class="day">22</div>
-                        <div class="day">23</div>
-                        <div class="day">24</div>
-                        <div class="day">25</div>
-                        <div class="day">26</div>
-                        <div class="day">27</div>
-                        <div class="day">28</div>
-                        <div class="day">29</div>
-                        <div class="day disabled">1</div>
-                    </div>
-                </div>
-                <div class="time-selection">
-                    <h3>Available Times</h3>
-                    <div class="time-slots">
-                        <button class="time-slot">9:00 AM</button>
-                        <button class="time-slot">10:30 AM</button>
-                        <button class="time-slot">1:00 PM</button>
-                        <button class="time-slot">2:30 PM</button>
-                        <button class="time-slot">4:00 PM</button>
-                    </div>
-                    <button class="confirm-btn">Confirm Appointment</button>
-                </div>
-            </div>
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1>Welcome Back, Consultant!</h1>
+        <div class="profile-summary">
+          <img src="../assets/profile.jpg" alt="User" />
+          <div>
+            <h4>John Doe</h4>
+            <p>Senior Consultant</p>
+          </div>
         </div>
+      </header>
+
+      <!-- Cards Section -->
+      <section class="cards-section">
+        <div class="card" data-aos="zoom-in">
+          <i class="fas fa-bullseye"></i>
+          <h3>Strategy Plans</h3>
+          <p>12 Active</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-handshake"></i>
+          <h3>Clients</h3>
+          <p>8 New This Month</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-tasks"></i>
+          <h3>Tasks</h3>
+          <p>24 Pending</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-comments"></i>
+          <h3>Messages</h3>
+          <p>5 Unread</p>
+        </div>
+      </section>
+
+      <!-- Charts & Activities -->
+      <section class="dashboard-analytics">
+        <div class="analytics-card">
+          <h3>Project Completion</h3>
+          <canvas id="projectChart"></canvas>
+        </div>
+        <div class="activity-feed">
+          <h3>Recent Activity</h3>
+          <ul>
+            <li><i class="fas fa-user-plus"></i> New client onboarded: <strong>ABC Inc.</strong></li>
+            <li><i class="fas fa-file-alt"></i> Strategy report uploaded</li>
+            <li><i class="fas fa-bell"></i> Reminder: Client meeting at 3PM</li>
+            <li><i class="fas fa-check"></i> Task completed: Market Research</li>
+          </ul>
+        </div>
+      </section>
     </main>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer-container">
-        <div class="footer-inner">
-            <div class="footer-columns">
-                <!-- Company Info -->
-                <div class="footer-company-info">
-                    <img src="assets/footerLogo.png" alt="Illuminant Solutions" class="footer-logo">
-                    <p>Strategic marketing consulting to illuminate your business potential and drive sustainable growth.</p>
-                    <div class="footer-social-links">
-                        <a href="http://www.linkedin.com/company/illuminant-vitam-solutions-llc" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:info@illuminantvitam.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61576273297808" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="footer-links-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links-list">
-                        <li><a href="./index.html">Services</a></li>
-                        <li><a href="./#contact">Contact Us</a></li>
-                        <li><a href="./pages/return.html">Return and Refund Policy</a></li>
-                        <li><a href="./pages/terms.html">Terms and Condition</a></li>
-                        <li><a href="./pages/privacyPolicy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services -->
-                <div class="footer-links-column">
-                    <h3>Services</h3>
-                    <ul class="footer-links-list">
-                        <li><a href="./index.html#services">Strategic Marketing Consulting</a></li>
-                        <li><a href="./index.html#services">Startup & Enterprise Growth</a></li>
-                        <li><a href="./index.html#services">Creative Brand Solutions</a></li>
-                        <li><a href="./index.html#services">Market Research</a></li>
-                        <li><a href="./index.html#services">Long-term Consulting Partnership</a></li>
-                        <li><a href="index.html#services">Digital Transformation Strategy</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="footer-contact-column">
-                    <h3>Contact Us</h3>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-map-marker-alt footer-contact-icon"></i>
-                        <p>ILLUMINANT VITAM SOLUTIONS, LLC<br>2055 Wood Street Ste 120<br>Sarasota, Florida 34237</p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-phone-alt footer-contact-icon"></i>
-                        <p>941 315-7157<br>
-                        888 380 0496<br>
-                        Mon-Fri, 9am-6pm EST</p>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fas fa-envelope footer-contact-icon"></i>
-                        <p>info@illuminantvitam.com<br>illuminantvitam.com</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Copyright -->
-            <div class="footer-copyright">
-                <p>© 2023 Illuminant Vitam Solutions, LLC. All rights reserved.</p>
-            </div>
+  <!-- Footer -->
+   <footer class="footer-container" id="footer">
+  <div class="footer-inner">
+    <!-- Footer Columns -->
+    <div class="footer-columns">
+      <!-- Company Info Column -->
+      <div class="footer-company-info">
+        <img src="assets/footerLogo.png" alt="Illuminant Vitam Solutions" class="footer-logo-img">
+        <p class="footer-company-description">
+          Strategic marketing consulting to illuminate your business potential and drive sustainable growth.
+        </p>
+        
+      </div>
+      
+      <!-- Quick Links Column -->
+      <div class="footer-links-column">
+        <h3 class="footer-column-title">Quick Links <span class="footer-column-underline"></span></h3>
+        <ul class="footer-links-list">
+          <li><a href="../index.html" class="footer-link">Home</a></li>
+          <li><a href="privacyPolicy.html" class="footer-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-link">Terms and Condition</a></li>
+          
+        </ul>
+      </div>
+      
+      <!-- Services Column -->
+      <div class="footer-links-column">
+        <h3 class="footer-column-title">Services <span class="footer-column-underline"></span></h3>
+        <ul class="footer-links-list">
+          <li><a href="#" class="footer-link">Strategic Marketing Consulting</a></li>
+          <li><a href="#" class="footer-link">Startup &amp; Enterprise Growth</a></li>
+          <li><a href="#" class="footer-link">Creative Brand Solutions</a></li>
+          <li><a href="#" class="footer-link">Market Research</a></li>
+          <li><a href="#" class="footer-link">Long-term Consulting Partnership</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info Column -->
+      <div class="footer-contact-column">
+        <h3 class="footer-column-title">Contact Us <span class="footer-column-underline"></span></h3>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <p class="footer-contact-text">
+            ILLUMINANT VITAM SOLUTIONS, LLC<br>
+            2055 Wood Street Ste 120<br>
+            Sarasota, Florida 34237
+          </p>
         </div>
-    </footer>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <p class="footer-contact-text">
+            941 315-7157<br>
+            888 380 0496<br>
+            Mon-Fri, 9am-6pm EST
+          </p>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <p class="footer-contact-text">
+            info@illuminantvitam.com<br>
+            illuminantvitam.com
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <script>
-        // Mobile Menu Toggle
-const hamburger = document.querySelector('.hamburger-menu');
-const navMenu = document.querySelector('nav ul');
+    <!-- Copyright -->
+    <div class="footer-copyright">
+      <p>© 2023 Illuminant Vitam Solutions, LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
-
-// Close menu when clicking on a link
-document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('projectChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Completed', 'Ongoing', 'Pending'],
+        datasets: [{
+          data: [60, 25, 15],
+          backgroundColor: ['#57affc', '#f7944d', '#e85d04'],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
     });
-});
-
-// Time Slot Selection
-document.querySelectorAll('.time-slot').forEach(slot => {
-    slot.addEventListener('click', () => {
-        document.querySelectorAll('.time-slot').forEach(s => {
-            s.classList.remove('selected');
-        });
-        slot.classList.add('selected');
-    });
-});
-
-// Profile Dropdown
-const profileDropdown = document.querySelector('.profile-dropdown');
-const dropdownContent = document.querySelector('.dropdown-content');
-
-profileDropdown.addEventListener('click', (e) => {
-    e.stopPropagation();
-    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-});
-
-// Close dropdown when clicking outside
-document.addEventListener('click', () => {
-    dropdownContent.style.display = 'none';
-});
-
-// Prevent dropdown from closing when clicking inside it
-dropdownContent.addEventListener('click', (e) => {
-    e.stopPropagation();
-});
-    </script>
+  </script>
 </body>
 </html>
