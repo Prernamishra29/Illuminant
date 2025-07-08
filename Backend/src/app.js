@@ -9,23 +9,23 @@ const app = express();
 const allowedOrigins = [
   "http://127.0.0.1:5500",
   "http://localhost:5500",
-  "http://127.0.0.1:5500/docs" ,
-  "https://prernamishra29.github.io/Illuminant/index.html"
-  // Optional, include if you're serving from here
+  "http://127.0.0.1:5500/docs",
+  "https://prernamishra29.github.io/Illuminant/index.html",
+  "https://illuminantvitam.com",
+  "https://www.illuminantvitam.com"
 ];
 
-// CORS Middleware
 app.use(cors({
   origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl)
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
-      callback(new Error("Not allowed by CORS"));
+      callback(new Error("Not allowed by CORS: " + origin));
     }
   },
   credentials: true,
 }));
+
 
 // Body parsers
 app.use(express.json({ limit: "16kb" }));
